@@ -1,0 +1,6 @@
+C:\GBN\StopWait\Debug\StopWait.exe
+C:\GBN\StopWait\Debug\StopWait.pdb
+C:\SR\StopWait\Debug\StopWait.exe
+C:\SR\StopWait\Debug\StopWait.pdb
+C:\TCP\StopWait\Debug\StopWait.exe
+C:\TCP\StopWait\Debug\StopWait.pdb
