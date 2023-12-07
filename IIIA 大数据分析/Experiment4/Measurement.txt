@@ -1,0 +1,2 @@
+Accuracy: 0.12921348314606743
+Total square distance: 62.809194803237915
