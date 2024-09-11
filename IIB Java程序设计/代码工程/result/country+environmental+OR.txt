@@ -1,0 +1,45 @@
+
+-----------------------------------------------------------------------
+
+docId: 11
+docPath: D:\JavaProject\MySearchEngine\text\6.txt
+docScore: 2.0
+termPostingMapping:
+country ------> {docId: 11  freq: 1   positions: [44]}
+environmental ------> {docId: 11  freq: 1   positions: [59]}
+content: 
+With a population of 602,000, Luxembourg is one of Europe's smallest countries -- yet it suffers from major traffic jams.
+
+But that could be about to change. As of March 1, 2020 all public transport -- trains, trams and buses -- in the country is now free.
+
+The government hopes the move will alleviate heavy congestion and bring environmental benefits, according to Dany Frank, a spokesperson for the Ministry of Mobility and Public Works.
+
+-----------------------------------------------------------------------
+
+docId: 0
+docPath: D:\JavaProject\MySearchEngine\text\1.txt
+docScore: 1.0
+termPostingMapping:
+country ------> {docId: 0  freq: 1   positions: [65]}
+content: 
+The novel coronavirus death toll has reached 21 as of Saturday in Britain as the number of confirmed cases totalled 1,140, according to the latest figures released by the British Department of Health and Social Care.
+
+The new figures showed an increase of 342 confirmed COVID-19 cases in Britain, the largest rise on a single day since the start of the outbreak in the country. Ten more patients who contracted coronavirus died, bringing the death toll in Britain to 21.
+
+All the 10 patients who died were aged over 60 and had underlying health conditions, said Chris Whitty, chief medical officer for England.
+
+According to health authorities, most of the cases are in England. There have been 121 confirmed cases in Scotland, 60 in Wales and 34 in Northern Ireland.
+
+The British government said on Friday that it estimated the true number of infected cases in Britain to be around 5,000 to 10,000. People who are self-isolating with mild symptoms are no longer being tested for the virus.
+
+-----------------------------------------------------------------------
+
+docId: 13
+docPath: D:\JavaProject\MySearchEngine\text\8.txt
+docScore: 1.0
+termPostingMapping:
+country ------> {docId: 13  freq: 1   positions: [23]}
+content: 
+Mandarin could be taught in Welsh secondary schools in a bid to raise Wales' international profile.
+The Welsh Government wants to establish the country as a visitor destination for Chinese people as part of its new strategy to boost trade.
+It is also looking to have a "Wales in Germany" themed year in 2021, and have an increased presence in EU countries.

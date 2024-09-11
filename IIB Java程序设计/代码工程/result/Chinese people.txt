@@ -1,0 +1,13 @@
+
+-----------------------------------------------------------------------
+
+docId: 13
+docPath: D:\JavaProject\MySearchEngine\text\8.txt
+docScore: 2.0
+termPostingMapping:
+Chinese ------> {docId: 13  freq: 1   positions: [29]}
+people ------> {docId: 13  freq: 1   positions: [30]}
+content: 
+Mandarin could be taught in Welsh secondary schools in a bid to raise Wales' international profile.
+The Welsh Government wants to establish the country as a visitor destination for Chinese people as part of its new strategy to boost trade.
+It is also looking to have a "Wales in Germany" themed year in 2021, and have an increased presence in EU countries.

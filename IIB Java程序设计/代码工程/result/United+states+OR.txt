@@ -1,0 +1,31 @@
+
+-----------------------------------------------------------------------
+
+docId: 2
+docPath: D:\JavaProject\MySearchEngine\text\11.txt
+docScore: 5.0
+termPostingMapping:
+states ------> {docId: 2  freq: 2   positions: [2, 64]}
+united ------> {docId: 2  freq: 3   positions: [1, 7, 63]}
+content: 
+The United States has formally notified the United Nations of its intention to withdraw from the Paris Agreement. The notification begins a one-year process of exiting the global climate change accord.
+
+The agreement brought together 188 nations to combat climate change.
+
+Announcing the plan last month, US Secretary of State Mike Pompeo said the agreement had imposed an "unfair economic burden" on the United States.
+
+In the Paris agreement, the US agreed to cut its heat-trapping pollution at least 26% below 2005 levels by 2025.
+
+-----------------------------------------------------------------------
+
+docId: 14
+docPath: D:\JavaProject\MySearchEngine\text\9.txt
+docScore: 1.0
+termPostingMapping:
+united ------> {docId: 14  freq: 1   positions: [31]}
+content: 
+Perhaps no one in recent history cared more about winning the All-Star Game than Kobe Bryant.
+
+The format changes and his memory combined to create a game Sunday night at the United Center that would've made Bryant proud.
+Technically, the winners were Team LeBron over Team Giannis 157-155 and local charities, as $500,000 was donated.
+The last hero was Chicago native Anthony Davis, who made the winning free throw. But the real victor was the competitive spirit Bryant embodied.

@@ -1,0 +1,516 @@
+-----------------------------------------------------------------------
+dictionary:
+accord according action activity aged agree agreed Agreement All-Star alleviate announced announcement Announcing Antarctic Antarctica Anthony anymore API approaches apps April Argentine asked atoms attached attention attrated audio Australia Australian authorities away Bad base based beautiful beauty begins Beijing benefits better biases bid Bing bit Bond boost boron bring bringing Britain British brought Bryant building buses bushfires buy called calories Canberra capital card care cared cares cars case cases cause Celsius Center change changes charities Chicago chief Chinese Chris circumstances city clean climate closed clothes Cloud Club coffee colleagues combat combined comes competitive concerned conditions confirmed congestion conquer consideration considered continent continues contracted coronavirus countries country court coverd create creative cut dancing danger Dany data Davis Day days death decided declared decorates degrees delay Department destination destroy detect devastated developed developers Die died different difficulty dinner diseases distance doer dog dogs Doing donated drinks dropping early easy eat eating economic electricity email embers embodied emergency encouraging energy England environmental environments establish estimated evaluation example existing exiting experts eyes facial Fahrenheit fan feel feeling figure figures filed film fingerprinting Fizzy flames food forget formally format founders Frank free Friday frozen fruit fuse fusion Game gender generate Giannis global Google Government grail green Guo habits half Hangzhou harness having health heat-trapping heavy Heinrich hero high high-energy highest hiking history hit home hopes Hora hydrogen identify ignore image images imposed increase increased infected infringed ingored inhospitable initiate inside intention international interview Ireland James jams juice just Kennel kind kinds Kobe labels lacking largest lasers latest law LeBron let levels life liked local logged lonely longer looked looking lots love lovely Luxembourg machine major make makes making man Mandarin March meals means medical memory Meteorological Mike mild Ministry Mobility moment month months morning moved Nations native nearly new News night northern notification notified novel November NSW nuclear number objects occur officer ofthese old one-year ongoing Organization outbreak outcry owners Paris park particles patients pay Peninsula people pet picnic plan planet pleasant pollution Pompeo population possible posted powerful preliminary presence previous privacy problems process producers produces professor profile projected prospect proud public pursuing quarter quiet raise reached reaction real realized realizing reason recent recognition record recording region reinforce relationship release released releasing reliably replaced reports research residents revealed right rights rise risk romance roses Rural safari said sake Saturday say scanning schools Sci-Tech scientists Scotland secondary Secretary self-isolating Service services set seven severe shops showed simply single sites smallest snacks Social South sparked spirit spokesperson spread square start state state-run States stationed strategy street studios submit suffers sugar Sunday surrounding survey symptoms tail taking talking taught Team Technically technology television temperature temperatures Territory tested theatrical themed thorough thoughts throw Time toll tops totalled trade traffic trains trams transport trees trip true typically unconditional underlying United University use used uses usually victor virus Vision visitor visitors wagging Wales walk wants warned Watching water way wearing week weight Welsh Whitty wildlife winners winning withdraw woke woman Works World year Zhejiang 
+-----------------------------------------------------------------------
+docId----->docPath Mapping
+0	----->	/Users/xupengzhu/Desktop/Java实验作业/MySearchEngine/text/15.txt
+1	----->	/Users/xupengzhu/Desktop/Java实验作业/MySearchEngine/text/14.txt
+2	----->	/Users/xupengzhu/Desktop/Java实验作业/MySearchEngine/text/13.txt
+3	----->	/Users/xupengzhu/Desktop/Java实验作业/MySearchEngine/text/12.txt
+4	----->	/Users/xupengzhu/Desktop/Java实验作业/MySearchEngine/text/10.txt
+5	----->	/Users/xupengzhu/Desktop/Java实验作业/MySearchEngine/text/11.txt
+6	----->	/Users/xupengzhu/Desktop/Java实验作业/MySearchEngine/text/9.txt
+7	----->	/Users/xupengzhu/Desktop/Java实验作业/MySearchEngine/text/8.txt
+8	----->	/Users/xupengzhu/Desktop/Java实验作业/MySearchEngine/text/5.txt
+9	----->	/Users/xupengzhu/Desktop/Java实验作业/MySearchEngine/text/4.txt
+10	----->	/Users/xupengzhu/Desktop/Java实验作业/MySearchEngine/text/6.txt
+11	----->	/Users/xupengzhu/Desktop/Java实验作业/MySearchEngine/text/7.txt
+12	----->	/Users/xupengzhu/Desktop/Java实验作业/MySearchEngine/text/3.txt
+13	----->	/Users/xupengzhu/Desktop/Java实验作业/MySearchEngine/text/2.txt
+14	----->	/Users/xupengzhu/Desktop/Java实验作业/MySearchEngine/text/1.txt
+
+-----------------------------------------------------------------------
+term---->postingList Mapping
+accord	----->	{docId: 5  freq: 1   positions: [30]}
+according	----->	{docId: 1  freq: 1   positions: [73]}->{docId: 10  freq: 1   positions: [61]}->{docId: 11  freq: 1   positions: [27]}->{docId: 14  freq: 2   positions: [22, 104]}
+action	----->	{docId: 1  freq: 1   positions: [28]}
+activity	----->	{docId: 13  freq: 1   positions: [1]}
+aged	----->	{docId: 14  freq: 1   positions: [88]}
+agree	----->	{docId: 12  freq: 1   positions: [19]}
+agreed	----->	{docId: 2  freq: 1   positions: [112]}->{docId: 5  freq: 1   positions: [71]}
+Agreement	----->	{docId: 5  freq: 4   positions: [17, 32, 54, 68]}
+All-Star	----->	{docId: 6  freq: 1   positions: [11]}
+alleviate	----->	{docId: 10  freq: 1   positions: [54]}
+announced	----->	{docId: 8  freq: 1   positions: [2]}
+announcement	----->	{docId: 0  freq: 1   positions: [49]}
+Announcing	----->	{docId: 5  freq: 1   positions: [41]}
+Antarctic	----->	{docId: 11  freq: 1   positions: [42]}
+Antarctica	----->	{docId: 11  freq: 2   positions: [13, 89]}
+Anthony	----->	{docId: 6  freq: 1   positions: [62]}
+anymore	----->	{docId: 12  freq: 1   positions: [22]}
+API	----->	{docId: 8  freq: 1   positions: [36]}
+approaches	----->	{docId: 2  freq: 1   positions: [3]}
+apps	----->	{docId: 8  freq: 1   positions: [42]}
+April	----->	{docId: 0  freq: 1   positions: [34]}
+Argentine	----->	{docId: 11  freq: 1   positions: [5]}
+asked	----->	{docId: 2  freq: 1   positions: [97]}
+atoms	----->	{docId: 9  freq: 1   positions: [51]}
+attached	----->	{docId: 2  freq: 1   positions: [46]}
+attention	----->	{docId: 3  freq: 1   positions: [45]}
+attrated	----->	{docId: 12  freq: 1   positions: [74]}
+audio	----->	{docId: 1  freq: 1   positions: [76]}
+Australia	----->	{docId: 4  freq: 1   positions: [6]}
+Australian	----->	{docId: 4  freq: 1   positions: [46]}
+authorities	----->	{docId: 14  freq: 1   positions: [107]}
+away	----->	{docId: 9  freq: 1   positions: [20]}
+Bad	----->	{docId: 3  freq: 4   positions: [0, 13, 20, 92]}
+base	----->	{docId: 11  freq: 1   positions: [7]}
+based	----->	{docId: 8  freq: 1   positions: [64]}
+beautiful	----->	{docId: 12  freq: 1   positions: [66]}
+beauty	----->	{docId: 12  freq: 2   positions: [13, 111]}
+begins	----->	{docId: 5  freq: 1   positions: [20]}
+Beijing	----->	{docId: 1  freq: 1   positions: [84]}
+benefits	----->	{docId: 10  freq: 1   positions: [60]}
+better	----->	{docId: 13  freq: 1   positions: [13]}
+biases	----->	{docId: 8  freq: 1   positions: [90]}
+bid	----->	{docId: 7  freq: 1   positions: [10]}
+Bing	----->	{docId: 1  freq: 1   positions: [25]}
+bit	----->	{docId: 2  freq: 1   positions: [12]}
+Bond	----->	{docId: 0  freq: 1   positions: [6]}
+boost	----->	{docId: 7  freq: 1   positions: [38]}
+boron	----->	{docId: 9  freq: 1   positions: [50]}
+bring	----->	{docId: 10  freq: 1   positions: [58]}
+bringing	----->	{docId: 14  freq: 1   positions: [73]}
+Britain	----->	{docId: 14  freq: 4   positions: [12, 49, 78, 147]}
+British	----->	{docId: 14  freq: 2   positions: [30, 132]}
+brought	----->	{docId: 5  freq: 1   positions: [33]}
+Bryant	----->	{docId: 6  freq: 3   positions: [15, 36, 78]}
+building	----->	{docId: 9  freq: 1   positions: [75]}
+buses	----->	{docId: 10  freq: 1   positions: [40]}
+bushfires	----->	{docId: 4  freq: 1   positions: [2]}
+buy	----->	{docId: 2  freq: 1   positions: [69]}
+called	----->	{docId: 0  freq: 1   positions: [60]}
+calories	----->	{docId: 3  freq: 1   positions: [73]}
+Canberra	----->	{docId: 4  freq: 1   positions: [13]}
+capital	----->	{docId: 4  freq: 3   positions: [12, 38, 47]}
+card	----->	{docId: 2  freq: 1   positions: [17]}
+care	----->	{docId: 2  freq: 1   positions: [10]}->{docId: 14  freq: 1   positions: [36]}
+cared	----->	{docId: 6  freq: 1   positions: [6]}
+cares	----->	{docId: 13  freq: 1   positions: [7]}
+cars	----->	{docId: 12  freq: 1   positions: [57]}
+case	----->	{docId: 1  freq: 1   positions: [47]}
+cases	----->	{docId: 14  freq: 5   positions: [18, 47, 111, 120, 145]}
+cause	----->	{docId: 3  freq: 1   positions: [78]}
+Celsius	----->	{docId: 11  freq: 2   positions: [54, 65]}
+Center	----->	{docId: 6  freq: 1   positions: [32]}
+change	----->	{docId: 5  freq: 2   positions: [29, 40]}->{docId: 8  freq: 1   positions: [22]}->{docId: 10  freq: 1   positions: [27]}
+changes	----->	{docId: 6  freq: 1   positions: [18]}
+charities	----->	{docId: 6  freq: 1   positions: [50]}
+Chicago	----->	{docId: 6  freq: 1   positions: [60]}
+chief	----->	{docId: 14  freq: 1   positions: [99]}
+Chinese	----->	{docId: 1  freq: 1   positions: [1]}->{docId: 7  freq: 1   positions: [29]}
+Chris	----->	{docId: 14  freq: 1   positions: [97]}
+circumstances	----->	{docId: 11  freq: 1   positions: [79]}
+city	----->	{docId: 12  freq: 4   positions: [61, 78, 90, 103]}
+clean	----->	{docId: 9  freq: 1   positions: [26]}->{docId: 12  freq: 1   positions: [64]}
+climate	----->	{docId: 5  freq: 2   positions: [28, 39]}->{docId: 11  freq: 1   positions: [0]}
+closed	----->	{docId: 4  freq: 1   positions: [7]}
+clothes	----->	{docId: 8  freq: 1   positions: [68]}
+Cloud	----->	{docId: 8  freq: 1   positions: [34]}
+Club	----->	{docId: 2  freq: 1   positions: [23]}
+coffee	----->	{docId: 12  freq: 1   positions: [68]}
+colleagues	----->	{docId: 9  freq: 1   positions: [36]}
+combat	----->	{docId: 5  freq: 1   positions: [38]}
+combined	----->	{docId: 6  freq: 1   positions: [22]}
+comes	----->	{docId: 0  freq: 1   positions: [50]}
+competitive	----->	{docId: 6  freq: 1   positions: [76]}
+concerned	----->	{docId: 2  freq: 1   positions: [122]}
+conditions	----->	{docId: 14  freq: 1   positions: [95]}
+confirmed	----->	{docId: 14  freq: 3   positions: [17, 45, 119]}
+congestion	----->	{docId: 10  freq: 1   positions: [56]}
+conquer	----->	{docId: 3  freq: 1   positions: [89]}
+consideration	----->	{docId: 0  freq: 1   positions: [39]}
+considered	----->	{docId: 11  freq: 1   positions: [75]}
+continent	----->	{docId: 11  freq: 1   positions: [26]}
+continues	----->	{docId: 0  freq: 1   positions: [17]}
+contracted	----->	{docId: 14  freq: 1   positions: [70]}
+coronavirus	----->	{docId: 0  freq: 1   positions: [16]}->{docId: 14  freq: 2   positions: [2, 71]}
+countries	----->	{docId: 7  freq: 1   positions: [61]}->{docId: 10  freq: 1   positions: [12]}
+country	----->	{docId: 7  freq: 1   positions: [23]}->{docId: 10  freq: 1   positions: [44]}->{docId: 14  freq: 1   positions: [65]}
+court	----->	{docId: 1  freq: 1   positions: [22]}
+coverd	----->	{docId: 12  freq: 1   positions: [80]}
+create	----->	{docId: 6  freq: 1   positions: [24]}->{docId: 8  freq: 1   positions: [87]}
+creative	----->	{docId: 13  freq: 1   positions: [3]}
+cut	----->	{docId: 5  freq: 1   positions: [73]}
+dancing	----->	{docId: 12  freq: 1   positions: [51]}
+danger	----->	{docId: 4  freq: 1   positions: [43]}
+Dany	----->	{docId: 10  freq: 1   positions: [63]}
+data	----->	{docId: 11  freq: 1   positions: [30]}
+Davis	----->	{docId: 6  freq: 1   positions: [63]}
+Day	----->	{docId: 2  freq: 1   positions: [2]}->{docId: 14  freq: 1   positions: [56]}
+days	----->	{docId: 0  freq: 1   positions: [51]}
+death	----->	{docId: 14  freq: 2   positions: [3, 75]}
+decided	----->	{docId: 12  freq: 1   positions: [35]}
+declared	----->	{docId: 4  freq: 1   positions: [18]}
+decorates	----->	{docId: 12  freq: 1   positions: [70]}
+degrees	----->	{docId: 11  freq: 3   positions: [48, 53, 64]}
+delay	----->	{docId: 0  freq: 1   positions: [66]}
+Department	----->	{docId: 14  freq: 1   positions: [31]}
+destination	----->	{docId: 7  freq: 1   positions: [27]}
+destroy	----->	{docId: 3  freq: 1   positions: [4]}
+detect	----->	{docId: 8  freq: 1   positions: [59]}
+devastated	----->	{docId: 4  freq: 1   positions: [5]}
+developed	----->	{docId: 9  freq: 1   positions: [30]}
+developers	----->	{docId: 8  freq: 1   positions: [29]}
+Die	----->	{docId: 0  freq: 1   positions: [32]}
+died	----->	{docId: 14  freq: 2   positions: [72, 86]}
+different	----->	{docId: 11  freq: 1   positions: [78]}
+difficulty	----->	{docId: 9  freq: 1   positions: [72]}
+dinner	----->	{docId: 2  freq: 1   positions: [77]}
+diseases	----->	{docId: 3  freq: 1   positions: [9]}
+distance	----->	{docId: 9  freq: 1   positions: [19]}
+doer	----->	{docId: 13  freq: 1   positions: [6]}
+dog	----->	{docId: 2  freq: 4   positions: [34, 66, 100, 116]}
+dogs	----->	{docId: 2  freq: 2   positions: [7, 51]}
+Doing	----->	{docId: 3  freq: 1   positions: [39]}->{docId: 13  freq: 1   positions: [9]}
+donated	----->	{docId: 6  freq: 1   positions: [55]}
+drinks	----->	{docId: 3  freq: 2   positions: [60, 65]}
+dropping	----->	{docId: 8  freq: 1   positions: [79]}
+early	----->	{docId: 12  freq: 1   positions: [29]}
+easy	----->	{docId: 8  freq: 1   positions: [40]}
+eat	----->	{docId: 3  freq: 1   positions: [56]}
+eating	----->	{docId: 3  freq: 4   positions: [1, 14, 21, 93]}
+economic	----->	{docId: 5  freq: 1   positions: [59]}
+electricity	----->	{docId: 9  freq: 1   positions: [61]}
+email	----->	{docId: 8  freq: 2   positions: [27, 52]}
+embers	----->	{docId: 4  freq: 1   positions: [52]}
+embodied	----->	{docId: 6  freq: 1   positions: [79]}
+emergency	----->	{docId: 4  freq: 1   positions: [23]}
+encouraging	----->	{docId: 9  freq: 1   positions: [13]}
+energy	----->	{docId: 9  freq: 1   positions: [87]}
+England	----->	{docId: 14  freq: 2   positions: [103, 114]}
+environmental	----->	{docId: 10  freq: 1   positions: [59]}
+environments	----->	{docId: 11  freq: 1   positions: [98]}
+establish	----->	{docId: 7  freq: 1   positions: [21]}
+estimated	----->	{docId: 14  freq: 1   positions: [139]}
+evaluation	----->	{docId: 0  freq: 1   positions: [42]}
+example	----->	{docId: 3  freq: 1   positions: [31]}
+existing	----->	{docId: 1  freq: 1   positions: [37]}
+exiting	----->	{docId: 5  freq: 1   positions: [25]}
+experts	----->	{docId: 11  freq: 1   positions: [1]}
+eyes	----->	{docId: 12  freq: 2   positions: [9, 76]}
+facial	----->	{docId: 1  freq: 1   positions: [12]}
+Fahrenheit	----->	{docId: 11  freq: 1   positions: [49]}
+fan	----->	{docId: 0  freq: 1   positions: [58]}
+feel	----->	{docId: 1  freq: 1   positions: [50]}->{docId: 2  freq: 1   positions: [120]}
+feeling	----->	{docId: 12  freq: 1   positions: [94]}
+figure	----->	{docId: 11  freq: 1   positions: [56]}
+figures	----->	{docId: 14  freq: 2   positions: [26, 39]}
+filed	----->	{docId: 1  freq: 1   positions: [45]}
+film	----->	{docId: 0  freq: 2   positions: [7, 63]}
+fingerprinting	----->	{docId: 1  freq: 1   positions: [38]}
+Fizzy	----->	{docId: 3  freq: 1   positions: [64]}
+flames	----->	{docId: 4  freq: 2   positions: [50, 84]}
+food	----->	{docId: 3  freq: 1   positions: [48]}
+forget	----->	{docId: 3  freq: 1   positions: [49]}
+formally	----->	{docId: 5  freq: 1   positions: [4]}
+format	----->	{docId: 6  freq: 1   positions: [17]}
+founders	----->	{docId: 0  freq: 1   positions: [54]}
+Frank	----->	{docId: 10  freq: 1   positions: [64]}
+free	----->	{docId: 6  freq: 1   positions: [68]}->{docId: 10  freq: 1   positions: [47]}
+Friday	----->	{docId: 4  freq: 1   positions: [15]}->{docId: 14  freq: 1   positions: [136]}
+frozen	----->	{docId: 11  freq: 1   positions: [25]}
+fruit	----->	{docId: 3  freq: 1   positions: [67]}
+fuse	----->	{docId: 9  freq: 1   positions: [46]}
+fusion	----->	{docId: 9  freq: 2   positions: [10, 68]}
+Game	----->	{docId: 6  freq: 2   positions: [12, 26]}
+gender	----->	{docId: 8  freq: 2   positions: [63, 80]}
+generate	----->	{docId: 9  freq: 1   positions: [60]}
+Giannis	----->	{docId: 6  freq: 1   positions: [46]}
+global	----->	{docId: 0  freq: 1   positions: [45]}->{docId: 5  freq: 1   positions: [27]}
+Google	----->	{docId: 8  freq: 3   positions: [0, 53, 73]}
+Government	----->	{docId: 7  freq: 1   positions: [18]}->{docId: 10  freq: 1   positions: [49]}->{docId: 14  freq: 1   positions: [133]}
+grail	----->	{docId: 9  freq: 1   positions: [24]}
+green	----->	{docId: 12  freq: 2   positions: [83, 89]}
+Guo	----->	{docId: 1  freq: 2   positions: [24, 66]}
+habits	----->	{docId: 3  freq: 4   positions: [2, 15, 22, 94]}
+half	----->	{docId: 2  freq: 1   positions: [41]}->{docId: 4  freq: 1   positions: [74]}
+Hangzhou	----->	{docId: 1  freq: 1   positions: [30]}
+harness	----->	{docId: 9  freq: 1   positions: [85]}
+having	----->	{docId: 2  freq: 1   positions: [114]}->{docId: 3  freq: 2   positions: [35, 59]}
+health	----->	{docId: 3  freq: 2   positions: [6, 86]}->{docId: 14  freq: 3   positions: [33, 94, 106]}
+heat-trapping	----->	{docId: 5  freq: 1   positions: [75]}
+heavy	----->	{docId: 10  freq: 1   positions: [55]}
+Heinrich	----->	{docId: 9  freq: 1   positions: [32]}
+hero	----->	{docId: 6  freq: 1   positions: [58]}
+high	----->	{docId: 3  freq: 1   positions: [71]}
+high-energy	----->	{docId: 9  freq: 1   positions: [53]}
+highest	----->	{docId: 11  freq: 1   positions: [18]}
+hiking	----->	{docId: 11  freq: 1   positions: [85]}
+history	----->	{docId: 6  freq: 1   positions: [5]}
+hit	----->	{docId: 11  freq: 1   positions: [45]}
+home	----->	{docId: 4  freq: 1   positions: [65]}->{docId: 11  freq: 1   positions: [93]}
+hopes	----->	{docId: 10  freq: 1   positions: [50]}
+Hora	----->	{docId: 9  freq: 1   positions: [33]}
+hydrogen	----->	{docId: 9  freq: 1   positions: [48]}
+identify	----->	{docId: 8  freq: 2   positions: [11, 46]}
+ignore	----->	{docId: 3  freq: 1   positions: [29]}
+image	----->	{docId: 8  freq: 1   positions: [5]}
+images	----->	{docId: 8  freq: 2   positions: [14, 49]}
+imposed	----->	{docId: 5  freq: 1   positions: [56]}
+increase	----->	{docId: 14  freq: 1   positions: [42]}
+increased	----->	{docId: 7  freq: 1   positions: [57]}
+infected	----->	{docId: 14  freq: 1   positions: [144]}
+infringed	----->	{docId: 1  freq: 1   positions: [59]}
+ingored	----->	{docId: 12  freq: 1   positions: [109]}
+inhospitable	----->	{docId: 11  freq: 1   positions: [97]}
+initiate	----->	{docId: 9  freq: 1   positions: [81]}
+inside	----->	{docId: 4  freq: 1   positions: [57]}
+intention	----->	{docId: 5  freq: 1   positions: [11]}
+international	----->	{docId: 7  freq: 1   positions: [14]}
+interview	----->	{docId: 1  freq: 1   positions: [80]}
+Ireland	----->	{docId: 14  freq: 1   positions: [130]}
+James	----->	{docId: 0  freq: 1   positions: [5]}
+jams	----->	{docId: 10  freq: 1   positions: [20]}
+juice	----->	{docId: 3  freq: 1   positions: [68]}
+just	----->	{docId: 2  freq: 1   positions: [108]}->{docId: 11  freq: 2   positions: [15, 44]}->{docId: 12  freq: 1   positions: [108]}
+Kennel	----->	{docId: 2  freq: 1   positions: [22]}
+kind	----->	{docId: 9  freq: 1   positions: [7]}
+kinds	----->	{docId: 9  freq: 1   positions: [65]}
+Kobe	----->	{docId: 6  freq: 1   positions: [14]}
+labels	----->	{docId: 8  freq: 1   positions: [81]}
+lacking	----->	{docId: 12  freq: 1   positions: [6]}
+largest	----->	{docId: 14  freq: 1   positions: [51]}
+lasers	----->	{docId: 9  freq: 1   positions: [44]}
+latest	----->	{docId: 14  freq: 1   positions: [25]}
+law	----->	{docId: 1  freq: 1   positions: [17]}
+LeBron	----->	{docId: 6  freq: 1   positions: [43]}
+let	----->	{docId: 2  freq: 1   positions: [53]}
+levels	----->	{docId: 5  freq: 1   positions: [82]}
+life	----->	{docId: 3  freq: 1   positions: [25]}->{docId: 12  freq: 1   positions: [15]}
+liked	----->	{docId: 12  freq: 1   positions: [92]}
+local	----->	{docId: 6  freq: 1   positions: [49]}
+logged	----->	{docId: 11  freq: 1   positions: [16]}
+lonely	----->	{docId: 2  freq: 1   positions: [92]}
+longer	----->	{docId: 8  freq: 1   positions: [10]}->{docId: 14  freq: 1   positions: [165]}
+looked	----->	{docId: 12  freq: 1   positions: [62]}
+looking	----->	{docId: 7  freq: 1   positions: [43]}
+lots	----->	{docId: 3  freq: 2   positions: [7, 18]}
+love	----->	{docId: 2  freq: 2   positions: [81, 127]}
+lovely	----->	{docId: 12  freq: 1   positions: [106]}
+Luxembourg	----->	{docId: 10  freq: 1   positions: [6]}
+machine	----->	{docId: 9  freq: 1   positions: [77]}
+major	----->	{docId: 10  freq: 1   positions: [18]}
+make	----->	{docId: 2  freq: 2   positions: [87, 118]}
+makes	----->	{docId: 8  freq: 1   positions: [38]}
+making	----->	{docId: 1  freq: 1   positions: [8]}
+man	----->	{docId: 8  freq: 1   positions: [17]}
+Mandarin	----->	{docId: 7  freq: 1   positions: [0]}
+March	----->	{docId: 10  freq: 1   positions: [30]}->{docId: 11  freq: 1   positions: [68]}
+meals	----->	{docId: 3  freq: 1   positions: [36]}
+means	----->	{docId: 3  freq: 1   positions: [41]}
+medical	----->	{docId: 14  freq: 1   positions: [100]}
+memory	----->	{docId: 6  freq: 1   positions: [21]}
+Meteorological	----->	{docId: 11  freq: 1   positions: [37]}
+Mike	----->	{docId: 5  freq: 1   positions: [50]}
+mild	----->	{docId: 14  freq: 1   positions: [161]}
+Ministry	----->	{docId: 10  freq: 1   positions: [69]}
+Mobility	----->	{docId: 10  freq: 1   positions: [71]}
+moment	----->	{docId: 12  freq: 1   positions: [99]}
+month	----->	{docId: 5  freq: 1   positions: [45]}
+months	----->	{docId: 0  freq: 1   positions: [14]}
+morning	----->	{docId: 12  freq: 1   positions: [32]}
+moved	----->	{docId: 0  freq: 1   positions: [25]}
+Nations	----->	{docId: 5  freq: 2   positions: [8, 36]}
+native	----->	{docId: 6  freq: 1   positions: [61]}
+nearly	----->	{docId: 4  freq: 1   positions: [73]}
+new	----->	{docId: 0  freq: 1   positions: [4]}->{docId: 1  freq: 1   positions: [42]}->{docId: 4  freq: 1   positions: [31]}->{docId: 7  freq: 1   positions: [35]}->{docId: 9  freq: 1   positions: [6]}->{docId: 14  freq: 1   positions: [38]}
+News	----->	{docId: 1  freq: 1   positions: [85]}
+night	----->	{docId: 6  freq: 1   positions: [28]}
+northern	----->	{docId: 11  freq: 1   positions: [10]}->{docId: 14  freq: 1   positions: [129]}
+notification	----->	{docId: 5  freq: 1   positions: [19]}
+notified	----->	{docId: 5  freq: 1   positions: [5]}
+novel	----->	{docId: 14  freq: 1   positions: [1]}
+November	----->	{docId: 0  freq: 1   positions: [36]}
+NSW	----->	{docId: 9  freq: 1   positions: [41]}
+nuclear	----->	{docId: 9  freq: 2   positions: [9, 67]}
+number	----->	{docId: 14  freq: 2   positions: [15, 142]}
+objects	----->	{docId: 8  freq: 1   positions: [47]}
+occur	----->	{docId: 3  freq: 1   positions: [10]}
+officer	----->	{docId: 14  freq: 1   positions: [101]}
+ofthese	----->	{docId: 3  freq: 1   positions: [91]}
+old	----->	{docId: 12  freq: 1   positions: [49]}
+one-year	----->	{docId: 5  freq: 1   positions: [22]}
+ongoing	----->	{docId: 4  freq: 1   positions: [1]}
+Organization	----->	{docId: 11  freq: 1   positions: [38]}
+outbreak	----->	{docId: 14  freq: 1   positions: [62]}
+outcry	----->	{docId: 1  freq: 1   positions: [6]}
+owners	----->	{docId: 2  freq: 1   positions: [101]}
+Paris	----->	{docId: 5  freq: 2   positions: [16, 67]}
+park	----->	{docId: 1  freq: 2   positions: [3, 32]}
+particles	----->	{docId: 9  freq: 1   positions: [54]}
+patients	----->	{docId: 14  freq: 2   positions: [68, 84]}
+pay	----->	{docId: 3  freq: 1   positions: [44]}
+Peninsula	----->	{docId: 11  freq: 1   positions: [43]}
+people	----->	{docId: 2  freq: 2   positions: [5, 62]}->{docId: 7  freq: 1   positions: [30]}->{docId: 8  freq: 1   positions: [12]}->{docId: 12  freq: 2   positions: [0, 50]}->{docId: 14  freq: 1   positions: [156]}
+pet	----->	{docId: 2  freq: 1   positions: [49]}
+picnic	----->	{docId: 11  freq: 1   positions: [83]}
+plan	----->	{docId: 5  freq: 1   positions: [43]}
+planet	----->	{docId: 11  freq: 1   positions: [101]}
+pleasant	----->	{docId: 11  freq: 1   positions: [76]}
+pollution	----->	{docId: 5  freq: 1   positions: [76]}
+Pompeo	----->	{docId: 5  freq: 1   positions: [51]}
+population	----->	{docId: 10  freq: 1   positions: [2]}
+possible	----->	{docId: 8  freq: 1   positions: [57]}
+posted	----->	{docId: 1  freq: 1   positions: [81]}
+powerful	----->	{docId: 9  freq: 1   positions: [43]}
+preliminary	----->	{docId: 11  freq: 1   positions: [29]}
+presence	----->	{docId: 7  freq: 1   positions: [58]}
+previous	----->	{docId: 11  freq: 1   positions: [59]}
+privacy	----->	{docId: 1  freq: 1   positions: [55]}
+problems	----->	{docId: 3  freq: 1   positions: [80]}
+process	----->	{docId: 5  freq: 1   positions: [23]}
+producers	----->	{docId: 0  freq: 1   positions: [21]}
+produces	----->	{docId: 9  freq: 1   positions: [89]}
+professor	----->	{docId: 1  freq: 2   positions: [18, 23]}
+profile	----->	{docId: 7  freq: 1   positions: [15]}
+projected	----->	{docId: 4  freq: 1   positions: [53]}
+prospect	----->	{docId: 2  freq: 1   positions: [93]}
+proud	----->	{docId: 6  freq: 1   positions: [37]}
+public	----->	{docId: 10  freq: 2   positions: [34, 73]}
+pursuing	----->	{docId: 9  freq: 1   positions: [4]}
+quarter	----->	{docId: 2  freq: 1   positions: [111]}
+quiet	----->	{docId: 12  freq: 1   positions: [44]}
+raise	----->	{docId: 7  freq: 1   positions: [12]}
+reached	----->	{docId: 14  freq: 1   positions: [6]}
+reaction	----->	{docId: 9  freq: 1   positions: [83]}
+real	----->	{docId: 6  freq: 1   positions: [72]}
+realized	----->	{docId: 12  freq: 1   positions: [59]}
+realizing	----->	{docId: 12  freq: 1   positions: [11]}
+reason	----->	{docId: 8  freq: 1   positions: [84]}
+recent	----->	{docId: 6  freq: 1   positions: [4]}->{docId: 9  freq: 1   positions: [0]}
+recognition	----->	{docId: 1  freq: 1   positions: [13]}->{docId: 8  freq: 1   positions: [6]}
+record	----->	{docId: 11  freq: 2   positions: [21, 60]}
+recording	----->	{docId: 1  freq: 1   positions: [77]}
+region	----->	{docId: 4  freq: 1   positions: [59]}
+reinforce	----->	{docId: 8  freq: 1   positions: [89]}
+relationship	----->	{docId: 2  freq: 1   positions: [39]}
+release	----->	{docId: 0  freq: 3   positions: [1, 27, 68]}
+released	----->	{docId: 14  freq: 1   positions: [27]}
+releasing	----->	{docId: 9  freq: 1   positions: [52]}
+reliably	----->	{docId: 9  freq: 1   positions: [80]}
+replaced	----->	{docId: 1  freq: 1   positions: [35]}
+reports	----->	{docId: 9  freq: 1   positions: [1]}
+research	----->	{docId: 2  freq: 1   positions: [95]}->{docId: 11  freq: 1   positions: [6]}
+residents	----->	{docId: 4  freq: 1   positions: [71]}
+revealed	----->	{docId: 8  freq: 1   positions: [24]}
+right	----->	{docId: 13  freq: 1   positions: [11]}
+rights	----->	{docId: 1  freq: 1   positions: [56]}
+rise	----->	{docId: 14  freq: 1   positions: [52]}
+risk	----->	{docId: 4  freq: 1   positions: [79]}
+romance	----->	{docId: 2  freq: 1   positions: [106]}
+roses	----->	{docId: 2  freq: 1   positions: [71]}
+Rural	----->	{docId: 4  freq: 1   positions: [27]}
+safari	----->	{docId: 1  freq: 1   positions: [31]}
+said	----->	{docId: 0  freq: 1   positions: [22]}->{docId: 1  freq: 1   positions: [72]}->{docId: 2  freq: 1   positions: [42]}->{docId: 5  freq: 1   positions: [52]}->{docId: 8  freq: 2   positions: [54, 75]}->{docId: 14  freq: 2   positions: [96, 134]}
+sake	----->	{docId: 3  freq: 1   positions: [83]}
+Saturday	----->	{docId: 4  freq: 1   positions: [61]}->{docId: 14  freq: 1   positions: [10]}
+say	----->	{docId: 11  freq: 1   positions: [80]}->{docId: 12  freq: 1   positions: [2]}
+scanning	----->	{docId: 1  freq: 1   positions: [14]}
+schools	----->	{docId: 7  freq: 1   positions: [7]}
+Sci-Tech	----->	{docId: 1  freq: 1   positions: [71]}
+scientists	----->	{docId: 9  freq: 1   positions: [3]}
+Scotland	----->	{docId: 14  freq: 1   positions: [122]}
+secondary	----->	{docId: 7  freq: 1   positions: [6]}
+Secretary	----->	{docId: 5  freq: 1   positions: [47]}
+self-isolating	----->	{docId: 14  freq: 1   positions: [159]}
+Service	----->	{docId: 4  freq: 1   positions: [29]}
+services	----->	{docId: 8  freq: 1   positions: [44]}
+set	----->	{docId: 11  freq: 1   positions: [66]}
+seven	----->	{docId: 0  freq: 1   positions: [13]}
+severe	----->	{docId: 4  freq: 1   positions: [41]}
+shops	----->	{docId: 12  freq: 1   positions: [69]}
+showed	----->	{docId: 14  freq: 1   positions: [40]}
+simply	----->	{docId: 8  freq: 1   positions: [65]}
+single	----->	{docId: 2  freq: 1   positions: [89]}->{docId: 14  freq: 1   positions: [55]}
+sites	----->	{docId: 0  freq: 1   positions: [59]}
+smallest	----->	{docId: 10  freq: 1   positions: [11]}
+snacks	----->	{docId: 3  freq: 1   positions: [38]}
+Social	----->	{docId: 14  freq: 1   positions: [35]}
+South	----->	{docId: 4  freq: 1   positions: [32]}
+sparked	----->	{docId: 1  freq: 1   positions: [5]}
+spirit	----->	{docId: 6  freq: 1   positions: [77]}
+spokesperson	----->	{docId: 10  freq: 1   positions: [66]}
+spread	----->	{docId: 0  freq: 1   positions: [19]}->{docId: 4  freq: 1   positions: [55]}
+square	----->	{docId: 12  freq: 1   positions: [54]}
+start	----->	{docId: 14  freq: 1   positions: [59]}
+state	----->	{docId: 4  freq: 2   positions: [21, 35]}->{docId: 5  freq: 1   positions: [49]}
+state-run	----->	{docId: 1  freq: 1   positions: [83]}
+States	----->	{docId: 5  freq: 2   positions: [2, 64]}
+stationed	----->	{docId: 11  freq: 1   positions: [2]}
+strategy	----->	{docId: 7  freq: 1   positions: [36]}
+street	----->	{docId: 12  freq: 1   positions: [41]}
+studios	----->	{docId: 0  freq: 1   positions: [64]}
+submit	----->	{docId: 1  freq: 1   positions: [10]}
+suffers	----->	{docId: 10  freq: 1   positions: [16]}
+sugar	----->	{docId: 3  freq: 1   positions: [75]}
+Sunday	----->	{docId: 6  freq: 1   positions: [27]}
+surrounding	----->	{docId: 4  freq: 1   positions: [36]}
+survey	----->	{docId: 2  freq: 1   positions: [19]}
+symptoms	----->	{docId: 14  freq: 1   positions: [162]}
+tail	----->	{docId: 2  freq: 1   positions: [85]}
+taking	----->	{docId: 1  freq: 2   positions: [19, 27]}
+talking	----->	{docId: 11  freq: 1   positions: [91]}
+taught	----->	{docId: 7  freq: 1   positions: [3]}
+Team	----->	{docId: 6  freq: 2   positions: [42, 45]}
+Technically	----->	{docId: 6  freq: 1   positions: [38]}
+technology	----->	{docId: 1  freq: 1   positions: [43]}->{docId: 9  freq: 3   positions: [11, 29, 69]}
+television	----->	{docId: 3  freq: 1   positions: [33]}
+temperature	----->	{docId: 11  freq: 1   positions: [19]}
+temperatures	----->	{docId: 11  freq: 2   positions: [39, 72]}
+Territory	----->	{docId: 4  freq: 2   positions: [48, 63]}
+tested	----->	{docId: 14  freq: 1   positions: [167]}
+theatrical	----->	{docId: 0  freq: 1   positions: [46]}
+themed	----->	{docId: 7  freq: 1   positions: [50]}
+thorough	----->	{docId: 0  freq: 1   positions: [41]}
+thoughts	----->	{docId: 2  freq: 1   positions: [104]}
+throw	----->	{docId: 6  freq: 1   positions: [69]}
+Time	----->	{docId: 0  freq: 1   positions: [30]}
+toll	----->	{docId: 14  freq: 2   positions: [4, 76]}
+tops	----->	{docId: 11  freq: 1   positions: [57]}
+totalled	----->	{docId: 14  freq: 1   positions: [19]}
+trade	----->	{docId: 7  freq: 1   positions: [39]}
+traffic	----->	{docId: 10  freq: 1   positions: [19]}
+trains	----->	{docId: 10  freq: 1   positions: [37]}
+trams	----->	{docId: 10  freq: 1   positions: [38]}
+transport	----->	{docId: 10  freq: 1   positions: [35]}
+trees	----->	{docId: 12  freq: 1   positions: [84]}
+trip	----->	{docId: 11  freq: 1   positions: [86]}
+true	----->	{docId: 8  freq: 1   positions: [62]}->{docId: 14  freq: 1   positions: [141]}
+typically	----->	{docId: 11  freq: 1   positions: [24]}
+unconditional	----->	{docId: 2  freq: 1   positions: [80]}
+underlying	----->	{docId: 14  freq: 1   positions: [93]}
+United	----->	{docId: 5  freq: 3   positions: [1, 7, 63]}->{docId: 6  freq: 1   positions: [31]}
+University	----->	{docId: 1  freq: 1   positions: [69]}->{docId: 9  freq: 1   positions: [39]}
+use	----->	{docId: 8  freq: 1   positions: [31]}
+used	----->	{docId: 9  freq: 1   positions: [58]}
+uses	----->	{docId: 9  freq: 1   positions: [42]}
+usually	----->	{docId: 3  freq: 1   positions: [70]}->{docId: 12  freq: 1   positions: [112]}
+victor	----->	{docId: 6  freq: 1   positions: [73]}
+virus	----->	{docId: 14  freq: 1   positions: [170]}
+Vision	----->	{docId: 8  freq: 1   positions: [35]}
+visitor	----->	{docId: 7  freq: 1   positions: [26]}
+visitors	----->	{docId: 1  freq: 1   positions: [9]}
+wagging	----->	{docId: 2  freq: 1   positions: [84]}
+Wales	----->	{docId: 4  freq: 1   positions: [33]}->{docId: 14  freq: 1   positions: [125]}
+walk	----->	{docId: 12  freq: 1   positions: [39]}
+wants	----->	{docId: 7  freq: 1   positions: [19]}
+warned	----->	{docId: 4  freq: 1   positions: [39]}
+Watching	----->	{docId: 3  freq: 1   positions: [32]}
+water	----->	{docId: 3  freq: 1   positions: [63]}
+way	----->	{docId: 2  freq: 1   positions: [59]}
+wearing	----->	{docId: 8  freq: 1   positions: [71]}
+week	----->	{docId: 12  freq: 1   positions: [24]}
+weight	----->	{docId: 3  freq: 1   positions: [79]}
+Welsh	----->	{docId: 7  freq: 2   positions: [5, 17]}
+Whitty	----->	{docId: 14  freq: 1   positions: [98]}
+wildlife	----->	{docId: 1  freq: 1   positions: [2]}
+winners	----->	{docId: 6  freq: 1   positions: [40]}
+winning	----->	{docId: 6  freq: 2   positions: [9, 67]}
+withdraw	----->	{docId: 5  freq: 1   positions: [13]}
+woke	----->	{docId: 12  freq: 1   positions: [26]}
+woman	----->	{docId: 8  freq: 1   positions: [20]}
+Works	----->	{docId: 10  freq: 1   positions: [74]}
+World	----->	{docId: 11  freq: 1   positions: [36]}
+year	----->	{docId: 7  freq: 1   positions: [51]}
+Zhejiang	----->	{docId: 1  freq: 1   positions: [68]}

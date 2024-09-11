@@ -1,0 +1,56 @@
+
+-----------------------------------------------------------------------
+
+docId: 2
+docPath: D:\JavaProject\MySearchEngine\text\11.txt
+docScore: 4.0
+termPostingMapping:
+change ------> {docId: 2  freq: 2   positions: [29, 40]}
+climate ------> {docId: 2  freq: 2   positions: [28, 39]}
+content: 
+The United States has formally notified the United Nations of its intention to withdraw from the Paris Agreement. The notification begins a one-year process of exiting the global climate change accord.
+
+The agreement brought together 188 nations to combat climate change.
+
+Announcing the plan last month, US Secretary of State Mike Pompeo said the agreement had imposed an "unfair economic burden" on the United States.
+
+In the Paris agreement, the US agreed to cut its heat-trapping pollution at least 26% below 2005 levels by 2025.
+
+-----------------------------------------------------------------------
+
+docId: 10
+docPath: D:\JavaProject\MySearchEngine\text\5.txt
+docScore: 1.0
+termPostingMapping:
+change ------> {docId: 10  freq: 1   positions: [22]}
+content: 
+Google has announced that its image recognition AI will no longer identify people in images as a man or a woman. The change was revealed in an email to developers who use the company's Cloud Vision API that makes it easy for apps and services to identify objects in images.
+
+In the email, Google said it wasn't possible to detect a person's true gender based simply on the clothes they were wearing. But Google also said that they were dropping gender labels for another reason: they could create or reinforce biases.
+
+-----------------------------------------------------------------------
+
+docId: 11
+docPath: D:\JavaProject\MySearchEngine\text\6.txt
+docScore: 1.0
+termPostingMapping:
+change ------> {docId: 11  freq: 1   positions: [27]}
+content: 
+With a population of 602,000, Luxembourg is one of Europe's smallest countries -- yet it suffers from major traffic jams.
+
+But that could be about to change. As of March 1, 2020 all public transport -- trains, trams and buses -- in the country is now free.
+
+The government hopes the move will alleviate heavy congestion and bring environmental benefits, according to Dany Frank, a spokesperson for the Ministry of Mobility and Public Works.
+
+-----------------------------------------------------------------------
+
+docId: 12
+docPath: D:\JavaProject\MySearchEngine\text\7.txt
+docScore: 1.0
+termPostingMapping:
+climate ------> {docId: 12  freq: 1   positions: [0]}
+content: 
+Climate experts stationed at an Argentine research base in a northern part of Antarctica have just logged the highest temperature on record for the typically frozen continent.
+According to preliminary data from the U.N.'s World Meteorological Organization, temperatures on the Antarctic Peninsula just hit 64.9 degrees Fahrenheit, or 18.3 degrees Celsius. That figure tops the previous record of 17.5 degrees Celsius set in March 2015.
+
+While such temperatures might be considered pleasant under different circumstances say on a picnic or hiking trip this is Antarctica we're talking about, home to the most inhospitable environments on the planet.

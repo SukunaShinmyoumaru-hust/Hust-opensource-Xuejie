@@ -1,0 +1,2 @@
+D:\Visual Studio\Projects\SatSolver\Debug\SatSolver.exe
+D:\Visual Studio\Projects\SatSolver\Debug\SatSolver.pdb

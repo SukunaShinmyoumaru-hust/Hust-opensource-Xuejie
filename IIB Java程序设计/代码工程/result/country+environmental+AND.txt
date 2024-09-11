@@ -1,0 +1,15 @@
+
+-----------------------------------------------------------------------
+
+docId: 11
+docPath: D:\JavaProject\MySearchEngine\text\6.txt
+docScore: 2.0
+termPostingMapping:
+country ------> {docId: 11  freq: 1   positions: [44]}
+environmental ------> {docId: 11  freq: 1   positions: [59]}
+content: 
+With a population of 602,000, Luxembourg is one of Europe's smallest countries -- yet it suffers from major traffic jams.
+
+But that could be about to change. As of March 1, 2020 all public transport -- trains, trams and buses -- in the country is now free.
+
+The government hopes the move will alleviate heavy congestion and bring environmental benefits, according to Dany Frank, a spokesperson for the Ministry of Mobility and Public Works.
