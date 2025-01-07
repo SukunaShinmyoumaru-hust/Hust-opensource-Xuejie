@@ -63,33 +63,15 @@
 **成册的复习笔记**
 
 \# 本文作者： Sukuna @灵山之上神风起
-\# 本文链接： https://sukunahust.moe/source/index.html
-\# 版权声明： 本站所有文章除特别声明外，均采用 (CC)BY-NC-SA 许可协议。转载请注明出处！
 
-1、概率论与数理统计 2、算法  3、离散数学一  4、离散数学二  5、网络  6、操作系统 暂无 7、信号与线性系统  8、数值分析  9、编译原理  10、数字电路  11、矩阵论  12、模拟电子技术 
+\# 本文链接： https://sukunahust.moe/source/index.html
+
+\# 版权声明： 本站所有文章除特别声明外，均采用 (CC)BY-NC-SA 许可协议。转载请注明出处！
 
 **CS入门手册**
 
 课本：[下载](https://sukunahust.lanzn.com/iThKK1pqq9gj)
 练习册： [下载](https://sukunahust.lanzn.com/ilsQ51pqq37e)
-
-**实验指导（希望大家能独立完成！！！）**
-
-华中科技大学操作系统PKE实验 https://sukunahust.moe/2022/02/26/oschallengelab/
-
-Xv6（麻省理工大学操作系统实验）实验指引 https://sukunahust.moe/2023/02/08/mit-6-s081-lab/
-
-Xv6（麻省理工大学操作系统实验）全英文实验手册翻译 https://sukunahust.moe/2023/02/09/mit-6-s081-xv6-information-集合/
-
-Sponge（斯坦福大学TCP实验）简易指引 https://sukunahust.moe/2023/02/06/stanford-cs144-lab/
-
-Cool（斯坦福大学编译原理实验）简易指引 https://sukunahust.moe/2024/04/17/stanford-cs143-PA/
-
-Bustub（CMU数据库实验）PA1-2指引 https://sukunahust.moe/2023/02/07/cmu14-445-lab/
-
-## 更新计划
-
-暂无
 
 
 
