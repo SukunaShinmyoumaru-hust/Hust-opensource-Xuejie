@@ -55,20 +55,5 @@
 | :----------: | :----: | :-----------: |
 | 数学建模比赛 |  美赛  | F奖论文和代码 |
 
-#### 其它暂未在本仓库中出现的资料
-
-**成册的复习笔记**
-
-\# 本文作者： Sukuna @灵山之上神风起
-
-\# 本文链接： https://sukunahust.moe/source/index.html
-
-\# 版权声明： 本站所有文章除特别声明外，均采用 (CC)BY-NC-SA 许可协议。转载请注明出处！
-
-**CS入门手册**
-
-课本：[下载](https://sukunahust.lanzn.com/iThKK1pqq9gj)
-练习册： [下载](https://sukunahust.lanzn.com/ilsQ51pqq37e)
-
 
 
