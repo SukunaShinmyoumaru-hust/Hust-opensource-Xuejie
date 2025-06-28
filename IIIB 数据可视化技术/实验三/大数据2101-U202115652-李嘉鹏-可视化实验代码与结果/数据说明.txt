@@ -1,0 +1,51 @@
+1. 世界杯成绩信息表：WorldCupsSummary
+包含了所有21届世界杯赛事（1930-2018）的比赛主办国、前四名队伍、总参赛队伍、总进球数、现场观众人数等汇总信息，包括如下字段：
+
+Year: 举办年份
+HostCountry: 举办国家
+Winner: 冠军队伍
+Second: 亚军队伍
+Third: 季军队伍
+Fourth: 第四名队伍
+GoalsScored: 总进球数
+QualifiedTeams: 总参赛队伍数
+MatchesPlayed: 总比赛场数
+Attendance: 现场观众总人数
+HostContinent: 举办国所在洲
+WinnerContinent: 冠军国家队所在洲
+
+
+2. 世界杯比赛比分汇总表：WorldCupMatches.csv
+包含了所有21届世界杯赛事（1930-2014）单场比赛的信息，包括比赛时间、比赛主客队、比赛进球数、比赛裁判等信息。包括如下字段：
+
+Year: 比赛（所属世界杯）举办年份
+Datetime: 比赛具体日期
+Stage: 比赛所属阶段，包括 小组赛（GroupX）、16进8（Quarter-Final）、半决赛（Semi-Final）、决赛（Final）等
+Stadium: 比赛体育场
+City: 比赛举办城市
+Home Team Name: 主队名
+Away Team Name: 客队名
+Home Team Goals: 主队进球数
+Away Team Goals: 客队进球数
+Attendance: 现场观众数
+Half-time Home Goals: 上半场主队进球数
+Half-time Away Goals: 上半场客队进球数
+Referee: 主裁
+Assistant 1: 助理裁判1
+Assistant 2: 助理裁判2
+RoundID: 比赛所处阶段ID，和Stage字段对应
+MatchID: 比赛ID
+Home Team Initials: 主队名字缩写
+Away Team Initials: 客队名字缩写
+
+
+3. 世界杯球员信息表：WorldCupPlayers.csv
+RoundID: 比赛所处阶段ID，同比赛信息表的RoundID字段
+MatchID: 比赛ID
+Team Initials: 队伍名
+Coach Name: 教练名
+Line-up: 首发/替补
+Shirt Number: 球衣号码
+Player Name: 队员名
+Position: 比赛角色，包括：C=Captain, GK=Goalkeeper
+Event: 比赛事件，包括进球、红/黄牌等

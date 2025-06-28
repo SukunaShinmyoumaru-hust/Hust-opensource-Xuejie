@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/maps/world.js"></script>
+
+</head>
+<body >
+    <div id="472e55053d604b5ba7b8ca37fbf29c17" class="chart-container" style="width:900px; height:500px; "></div>
+    <script>
+        var chart_472e55053d604b5ba7b8ca37fbf29c17 = echarts.init(
+            document.getElementById('472e55053d604b5ba7b8ca37fbf29c17'), 'light', {renderer: 'canvas'});
+        var option_472e55053d604b5ba7b8ca37fbf29c17 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "series": [
+        {
+            "type": "map",
+            "name": "\u4e16\u754c\u676f\u4e3e\u529e\u6b21\u6570",
+            "label": {
+                "show": false,
+                "margin": 8
+            },
+            "map": "world",
+            "data": [
+                {
+                    "name": "Italy",
+                    "value": 2
+                },
+                {
+                    "name": "France",
+                    "value": 2
+                },
+                {
+                    "name": "Brazil",
+                    "value": 2
+                },
+                {
+                    "name": "Mexico",
+                    "value": 2
+                },
+                {
+                    "name": "Germany",
+                    "value": 2
+                },
+                {
+                    "name": "Uruguay",
+                    "value": 1
+                },
+                {
+                    "name": "Switzerland",
+                    "value": 1
+                },
+                {
+                    "name": "Sweden",
+                    "value": 1
+                },
+                {
+                    "name": "Chile",
+                    "value": 1
+                },
+                {
+                    "name": "England",
+                    "value": 1
+                },
+                {
+                    "name": "Argentina",
+                    "value": 1
+                },
+                {
+                    "name": "Spain",
+                    "value": 1
+                },
+                {
+                    "name": "USA",
+                    "value": 1
+                },
+                {
+                    "name": "Korea/Japan",
+                    "value": 1
+                },
+                {
+                    "name": "South Africa",
+                    "value": 1
+                },
+                {
+                    "name": "Russia",
+                    "value": 1
+                }
+            ],
+            "roam": true,
+            "aspectScale": 0.75,
+            "nameProperty": "name",
+            "selectedMode": false,
+            "zoom": 1,
+            "zlevel": 0,
+            "z": 2,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "mapValueCalculation": "sum",
+            "showLegendSymbol": true,
+            "emphasis": {},
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u4e16\u754c\u676f\u4e3e\u529e\u6b21\u6570"
+            ],
+            "selected": {},
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "title": [
+        {
+            "show": true,
+            "text": "\u4e16\u754c\u676f\u4e3e\u529e\u6b21\u6570Map",
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ],
+    "visualMap": {
+        "show": true,
+        "type": "continuous",
+        "min": 0,
+        "max": 3,
+        "inRange": {
+            "color": [
+                "#50a3ba",
+                "#eac763",
+                "#d94e5d"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "hoverLink": true,
+        "orient": "vertical",
+        "left": "5%",
+        "bottom": "5%",
+        "padding": 5,
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 140,
+        "borderWidth": 0
+    }
+};
+        chart_472e55053d604b5ba7b8ca37fbf29c17.setOption(option_472e55053d604b5ba7b8ca37fbf29c17);
+    </script>
+</body>
+</html>
