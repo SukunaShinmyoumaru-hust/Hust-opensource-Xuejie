@@ -1,0 +1,1 @@
+model = torch.load('torch_alex.pth')
