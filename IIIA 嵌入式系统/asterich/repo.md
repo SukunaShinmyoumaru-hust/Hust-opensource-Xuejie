@@ -1,0 +1,1 @@
+https://github.com/asterich/hust-homework-and-labs/tree/master/labs/%E5%B5%8C%E5%85%A5%E5%BC%8F/lab-2022-st
