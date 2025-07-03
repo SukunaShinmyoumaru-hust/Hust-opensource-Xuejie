@@ -1,0 +1,1 @@
+https://github.com/asterich/hust-homework-and-labs/tree/master/labs/%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/parallel_computing_lab
