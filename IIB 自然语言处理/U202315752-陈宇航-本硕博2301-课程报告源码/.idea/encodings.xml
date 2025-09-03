@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/segmentation/model/datasets/SogouLabDic.dic" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/segmentation/model/datasets/pku/mm_seg.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/segmentation/test_data/pku/bimm_seg.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/segmentation/test_data/pku/bmm_seg.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/segmentation/test_data/pku/hmm_seg.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/segmentation/test_data/pku/mm_seg.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/segmentation/test_data/pku/unigram_seg.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/segmentation/test_data/shanxi/mm_seg.txt" charset="GBK" />
+  </component>
+</project>

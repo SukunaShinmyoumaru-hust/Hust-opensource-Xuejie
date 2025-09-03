@@ -1,0 +1,5 @@
+pytorch-crf
+sklearn
+torch~=1.7.1
+TorchCRF~=1.1.0
+tqdm

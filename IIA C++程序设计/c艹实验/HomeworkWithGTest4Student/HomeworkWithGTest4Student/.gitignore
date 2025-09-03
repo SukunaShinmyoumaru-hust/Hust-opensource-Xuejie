@@ -1,0 +1,25 @@
+**/CMakeCache.txt
+**/CMakeFiles
+**/cmake_install.cmake
+**/MakeFile
+**/Testing
+**/CTestTestfile.cmake
+**/build
+**/.DS_Store
+**/.history
+**/*.a
+**/*.lib
+**/*.exe
+**/.*.swp
+**/.vscode/*
+src/main
+tags
+tests/googletest
+
+cmake-build-debug
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr

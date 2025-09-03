@@ -1,0 +1,2 @@
+D:\mingw64\bin\ar.exe qc D:\VSCodeProjects\C++Course\HomeworkWithGTest\bin\libHomeworkWithGTest.a CMakeFiles/HomeworkWithGTest.dir/ch4_homework/MyArray.cpp.obj
+D:\mingw64\bin\ranlib.exe D:\VSCodeProjects\C++Course\HomeworkWithGTest\bin\libHomeworkWithGTest.a

@@ -1,0 +1,3 @@
+C:\CMake\bin\cmake.exe -E rm -f CMakeFiles\HomeworkWithGTest-main.dir/objects.a
+D:\mingw64\bin\ar.exe qc CMakeFiles\HomeworkWithGTest-main.dir/objects.a @CMakeFiles\HomeworkWithGTest-main.dir\objects1.rsp
+D:\mingw64\bin\c++.exe -Wno-deprecated-declarations -Wall -Werror -Wnon-virtual-dtor -Woverloaded-virtual -g -Wl,--whole-archive CMakeFiles\HomeworkWithGTest-main.dir/objects.a -Wl,--no-whole-archive -o D:\VSCodeProjects\C++Course\HomeworkWithGTest\bin\HomeworkWithGTest-main.exe -Wl,--out-implib,D:\VSCodeProjects\C++Course\HomeworkWithGTest\bin\libHomeworkWithGTest-main.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\HomeworkWithGTest-main.dir\linklibs.rsp
