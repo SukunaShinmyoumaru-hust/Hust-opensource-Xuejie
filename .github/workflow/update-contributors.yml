@@ -1,0 +1,22 @@
+name: Update Contributors
+on:
+  push:
+    branches:
+      - main  # 或者 master，根据你的默认分支名
+  schedule:
+    - cron: '0 0 * * *' # 每天 UTC 时间 00:00 自动运行一次，确保能抓取新贡献者
+jobs:
+  contrib-readme-job:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: akhilmhdh/contributors-readme-action@v2.3.6
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit & Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git diff --staged --quiet || git commit -m "docs: update contributors list"
+          git push
