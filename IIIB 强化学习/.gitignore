@@ -1,0 +1,27 @@
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Local temporary files
+tmp/
+
+# LaTeX build outputs
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.xdv
+*.pdf
+
+# Local replay/log files
+*.stdout.log
+*.stderr.log
+*.replay.log
+
+# Retained source and published assets
+!*.tex
+!HUSTBlack.eps
+!exp*/results/*.png

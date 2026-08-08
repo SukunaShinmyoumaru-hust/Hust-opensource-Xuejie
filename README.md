@@ -61,6 +61,7 @@
 | 并行计算           | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIIB%20并行计算) |
 | 数据可视化技术     | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIIB%20数据可视化技术) |
 | 编译原理           | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIIB%20编译原理) |
+| 强化学习           | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIIB%20强化学习) |
 | 计算机系统结构     | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIIB%20计算机系统结构) |
 | 大数据系统综合实践 | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IVA%20大数据系统综合实践) |
 | 数字图像处理       | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIIB%20数字图像处理) |

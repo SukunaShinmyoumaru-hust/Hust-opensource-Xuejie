@@ -1,0 +1,10 @@
+| Learning Rate | Method | Mean Error | Std Error |
+|---|---|---|---|
+| Fixed | BGD (m=100) | 0.97971 | 0.27174 |
+| Fixed | MBGD (m=50) | 0.57264 | 0.34862 |
+| Fixed | MBGD (m=5) | 0.61620 | 0.35826 |
+| Fixed | SGD (m=1) | 1.67644 | 0.90371 |
+| Decaying | BGD (m=100) | 3.01916 | 0.34552 |
+| Decaying | MBGD (m=50) | 1.20914 | 0.28016 |
+| Decaying | MBGD (m=5) | 0.57724 | 0.35927 |
+| Decaying | SGD (m=1) | 0.57894 | 0.36153 |
