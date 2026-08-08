@@ -48,6 +48,7 @@
 | 算法设计与分析     | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIA%20算法设计与分析) |
 | 数据库设计原理     | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIB%20数据库设计原理) |
 | 自然语言处理       | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIB%20自然语言处理) |
+| 自然语言处理（必修） | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIIB%20自然语言处理（必修）) |
 | 计算机系统基础     | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIB%20计算机系统基础) |
 | 计算机组成原理     | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIB%20计算机组成原理) |
 | 大数据分析         | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIIA%20大数据分析) |
@@ -111,4 +112,3 @@
 
 
 Sukuna 博客:www.sukunahust.moe
-

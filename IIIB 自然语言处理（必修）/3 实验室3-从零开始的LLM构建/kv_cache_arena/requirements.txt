@@ -1,0 +1,12 @@
+# Minimal runtime dependencies for KV Cache Arena.
+#
+# Install PyTorch separately so CPU-only users do not accidentally pull a CUDA build.
+# CPU-only example:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+# Then install the rest:
+#   pip install -r requirements.txt
+#
+# If you already have a matching GPU build of PyTorch installed, you can reuse it.
+
+tqdm>=4.66,<5
+transformers>=4.40 # tho i test all experiment only on 5.6.2
