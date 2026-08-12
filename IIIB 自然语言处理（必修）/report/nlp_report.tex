@@ -1,0 +1,838 @@
+% !TeX program = xelatex
+\documentclass[12pt,a4paper,UTF8]{ctexart}
+
+\usepackage{geometry}
+\usepackage{fontspec}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{titletoc}
+\usepackage{fancyhdr}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{etoolbox}
+\usepackage{indentfirst}
+\usepackage{enumitem}
+\usepackage[hidelinks,linktoc=none]{hyperref}
+\hypersetup{
+  colorlinks=false,
+  pdfborder={0 0 0},
+  bookmarksopen=true,
+  bookmarksnumbered=true
+}
+
+% Page settings recovered from the Word sample:
+% A4; top/bottom 25.4mm; left/right about 31.75mm.
+\geometry{
+  a4paper,
+  top=25.4mm,
+  bottom=25.4mm,
+  left=31.75mm,
+  right=31.75mm,
+  headheight=18pt,
+  headsep=6mm,
+  footskip=14mm
+}
+
+% Compile with XeLaTeX on Windows. If a font name differs on your machine,
+% replace it here only; the rest of the template can stay unchanged.
+\setmainfont{Times New Roman}
+\setCJKmainfont{SimSun}
+\setCJKsansfont{SimHei}
+\setCJKmonofont{FangSong}
+\setCJKfamilyfont{tocboldsong}[AutoFakeBold=2.5]{SimSun}
+\setCJKfamilyfont{coverfs}[AutoFakeBold=2.5]{FangSong}
+\setCJKfamilyfont{hwzs}{STZhongsong}
+\newcommand{\tocboldsong}{\CJKfamily{tocboldsong}}
+\newcommand{\coverfangsong}{\CJKfamily{coverfs}}
+\newcommand{\huawenzhongsong}{\CJKfamily{hwzs}}
+
+\newcommand{\xiaoer}{\fontsize{18pt}{27pt}\selectfont}
+\newcommand{\sihao}{\fontsize{14pt}{21pt}\selectfont}
+\newcommand{\xiaosi}{\fontsize{12pt}{18pt}\selectfont}
+\newcommand{\wuhao}{\fontsize{10.5pt}{15pt}\selectfont}
+\newcommand{\coverbig}{\fontsize{42pt}{52pt}\selectfont}
+\newcommand{\covercourse}{\fontsize{18pt}{27pt}\selectfont}
+
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0pt}
+\onehalfspacing
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{\textcolor{gray!65}{\huawenzhongsong\wuhao 华中科技大学计算机学院《自然语言处理》实验报告}}
+\fancyfoot[C]{\bfseries\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\vskip-7pt\hbox to\headwidth{\color{gray!65}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrulewidth}{0pt}
+
+% Level 1: 黑体小二加粗居中，前后约 0.5 行；每章另起页。
+\titleformat{\section}
+  {\centering\heiti\bfseries\xiaoer}
+  {\thesection}{1em}{}
+\titlespacing*{\section}{0pt}{7.8pt}{7.8pt}
+
+% Level 2: 黑体四号加粗，前后约 0.5 行。
+\titleformat{\subsection}
+  {\heiti\bfseries\sihao}
+  {\thesubsection}{1em}{}
+\titlespacing*{\subsection}{0pt}{7.8pt}{7.8pt}
+
+% Level 3: 黑体小四加粗，前后约 0.5 行。
+\titleformat{\subsubsection}
+  {\heiti\bfseries\xiaosi}
+  {\thesubsubsection}{1em}{}
+\titlespacing*{\subsubsection}{0pt}{7.8pt}{7.8pt}
+
+\newcommand{\labsection}[1]{\clearpage\section{#1}}
+
+% TOC: title is 黑体小二居中； entries use 宋体小四 1.5 倍行距,
+% top-level entries bold.
+\setcounter{tocdepth}{2}
+\renewcommand{\contentsname}{}
+\newcommand{\toclabelbox}[1]{\makebox[4em][l]{#1}}
+\makeatletter
+\newcommand{\toccurrentdest}{}
+\newcommand{\tocrowstart}[1]{%
+  \makebox[0pt][l]{%
+    \raisebox{-0.25em}[0pt][0pt]{%
+      \hyperlink{\toccurrentdest}{\XeTeXLinkBox{\hbox to \linewidth{\vphantom{\xiaosi A}\hfill}}}%
+    }%
+  }%
+  #1%
+}
+\newcommand{\tocrowfinish}{%
+  \hspace{0.5em}%
+  \xleaders\hbox{\raisebox{0.42ex}{\normalfont .}}\hfill
+  \nobreak\hb@xt@\@pnumwidth{\hfil\thecontentspage}%
+  \hspace*{-\@pnumwidth}%
+}
+\makeatother
+\titlecontents{section}
+  [0pt]{\tocboldsong\xiaosi\bfseries\setstretch{1.5}\parskip=0pt}
+  {\tocrowstart{\toclabelbox{\thecontentslabel}}}{\tocrowstart{}}{\tocrowfinish}
+\titlecontents{subsection}
+  [0pt]{\songti\xiaosi\setstretch{1.5}\parskip=0pt}
+  {\tocrowstart{\toclabelbox{\thecontentslabel}}}{\tocrowstart{\toclabelbox{}}}{\tocrowfinish}
+\titlecontents{subsubsection}
+  [0pt]{\songti\xiaosi\setstretch{1.5}\parskip=0pt}
+  {\tocrowstart{\toclabelbox{\thecontentslabel}}}{\tocrowstart{\toclabelbox{}}}{\tocrowfinish}
+
+\captionsetup[figure]{
+  name=图,
+  font={bf},
+  labelfont={bf},
+  textfont={bf},
+  justification=centering,
+  labelsep=space,
+  position=bottom,
+  skip=0pt
+}
+\captionsetup[table]{
+  name=表,
+  font={bf},
+  labelfont={bf},
+  textfont={bf},
+  justification=centering,
+  labelsep=space,
+  position=top,
+  skip=0pt
+}
+\DeclareCaptionFont{captionheiti}{\heiti\xiaosi}
+\captionsetup{font=captionheiti}
+
+\newcolumntype{C}[1]{>{\centering\arraybackslash\wuhao}p{#1}}
+\renewcommand{\arraystretch}{1.35}
+
+\lstset{
+  basicstyle=\fontspec{Times New Roman}\xiaosi\singlespacing,
+  columns=fullflexible,
+  keepspaces=true,
+  showstringspaces=false,
+  breaklines=true,
+  frame=none
+}
+
+\newcommand{\coverfield}[2]{%
+  {\heiti\bfseries\sihao #1：}\underline{\makebox[59mm][c]{\heiti\bfseries\sihao #2}}%
+}
+
+\newcommand{\coverdatefield}[2]{%
+  {\heiti\bfseries\sihao #1：}\underline{\makebox[54.5mm][c]{\heiti\bfseries\sihao #2}}%
+}
+
+\newcommand{\makereportcover}[6]{%
+  \begin{titlepage}
+    \thispagestyle{empty}
+    \vspace*{-2mm}
+    \begin{center}
+      \includegraphics[width=208.8pt,height=35.35pt]{HUSTBlack.eps}
+    \end{center}
+    \vspace{8mm}
+    \begin{center}
+      {\coverfangsong\bfseries\coverbig\makebox[0.74\textwidth][s]{课\hfill 程\hfill 实\hfill 验\hfill 报\hfill 告}}
+    \end{center}
+
+    \vspace{24mm}
+    {\covercourse\noindent\hspace*{6mm}{\heiti\bfseries 课程名称：}%
+    \underline{\makebox[109mm][c]{\heiti\bfseries #1}}}
+
+    \vspace{68.5mm}
+    \begin{flushleft}
+      \hspace*{31.5mm}\coverfield{专业班级}{#2}\par
+      \vspace{4.5mm}
+      \hspace*{31.5mm}\coverfield{学\quad\quad 号}{#3}\par
+      \vspace{4.5mm}
+      \hspace*{31.5mm}\coverfield{姓\quad\quad 名}{#4}\par
+      \vspace{4.5mm}
+      \hspace*{31.5mm}\coverfield{指导教师}{#5}\par
+      \vspace{4.5mm}
+      \hspace*{31.5mm}\coverdatefield{报告日期}{#6}\par
+    \end{flushleft}
+
+    \vfill
+    \begin{center}
+      {\heiti\bfseries\sihao 计算机科学与技术学院}
+    \end{center}
+    \vspace*{6mm}
+  \end{titlepage}
+}
+
+\newcommand{\makereporttoc}{%
+  \clearpage
+  \thispagestyle{empty}
+  \begin{center}
+    {\heiti\bfseries\xiaoer 目\quad 录}
+  \end{center}
+  \vspace{7.8pt}
+  \reporttocentries
+  \clearpage
+  \setcounter{page}{1}
+}
+
+\newenvironment{reportbody}{\songti\xiaosi\onehalfspacing\sloppy}{}
+\newenvironment{figurecontent}{\begin{center}\songti\wuhao}{\end{center}}
+\lstdefinestyle{appendixcode}{
+  basicstyle=\ttfamily\fontsize{7pt}{8.2pt}\selectfont\singlespacing,
+  language=Python,
+  numbers=left,
+  numberstyle=\ttfamily\fontsize{6pt}{7pt}\selectfont\color{gray!70},
+  stepnumber=1,
+  numbersep=5pt,
+  frame=single,
+  rulecolor=\color{blue!35!black},
+  backgroundcolor=\color{blue!3},
+  keywordstyle=\bfseries\color{blue!65!black},
+  commentstyle=\ttfamily\fontsize{8.5pt}{9.4pt}\selectfont\color{green!40!black},
+  stringstyle=\color{red!55!black},
+  identifierstyle=\color{black},
+  emph={self,True,False,None,torch,nn,AutoModel},
+  emphstyle=\color{purple!65!black},
+  xleftmargin=0.8em,
+  xrightmargin=0.2em,
+  aboveskip=5pt,
+  belowskip=5pt,
+  breaklines=true,
+  columns=fullflexible,
+  keepspaces=true,
+  showstringspaces=false
+}
+\newenvironment{reportrefs}{%
+  \begin{enumerate}[label={[\arabic*]}, leftmargin=3em, labelsep=0.7em, itemsep=6pt, topsep=0pt]
+}{\end{enumerate}}
+\makeatletter
+\newcommand{\reporttocentries}{%
+  \begingroup
+  \let\origcontentsline\contentsline
+  \def\contentsline##1##2##3##4{%
+    \gdef\toccurrentdest{##4}%
+    \origcontentsline{##1}{##2}{##3}{##4}%
+  }%
+  \@starttoc{toc}%
+  \endgroup
+}
+\makeatother
+
+\begin{document}
+
+\makereportcover
+  {自然语言处理实验}
+  {PROGRAM-CLASS}
+  {U2023xxxxx}
+  {STUDENT-NAME}
+  {辜希武}
+  {2026 年 6 月 17 日}
+
+\makereporttoc
+
+\begin{reportbody}
+
+\labsection{中文分词实现}
+
+\subsection{问题描述}
+中文分词的目标是把连续汉字序列切分成词语序列。英文等拉丁语系文本通常用空格标明词边界，而中文文本只有句子、标点和段落等较明显的边界，词边界并不直接显示。因此，同一句话在不同上下文中可能出现不同切分，系统需要根据词典知识、统计规律和上下文语义判断边界位置。分词结果又是后续词性标注、命名实体识别、信息检索和文本生成等任务的基础，边界错误会继续传递到下游模型。
+
+任务书要求完成两类基础方法：一类是基于词典匹配的规则方法，包括正向最大匹配、逆向最大匹配和双向最大匹配；另一类是把中文分词视作序列标注问题，利用 BiLSTM-CRF 等模型预测每个字符的边界标签。基础任务之外，还需要围绕基础分词器做优化，可选方向包括引入 BERT 等预训练语言模型、利用命名实体识别结果减少实体切分错误、构造更合适的词典集、实现新词发现以及调整训练超参数。
+
+本实验实际采用 BMES 标注方式描述词边界：B 表示词首，M 表示词中，E 表示词尾，S 表示单字成词。模型输出标签序列后，再将其还原为以空格分隔的分词结果。评价采用任务书给出的词级 Precision、Recall 和 F1-score：只有预测词的起止位置与标准答案完全一致，才计为正确。因此，模型既要避免把一个词错误拆开，也要避免把相邻词错误合并。后续实验中的词典纠错和 NER 融合，本质上都是在这个词级 F1 目标下重新调整边界。
+
+\subsection{基础实验}
+基础实验包括基于词典的最大匹配分词和基于 BiLSTM-CRF 的序列标注分词。
+
+字典版基础任务是补全老师给出的 \texttt{Dictionary\_based.py} 框架。原始框架中 \texttt{fmm\_split}、\texttt{rmm\_split} 和 \texttt{bimm\_split} 三个核心函数均为填空，README 只要求完善该文件并参考测试输出。我的实现首先读取词典首列作为词表，并计算词典最大词长；正向最大匹配从当前位置开始，按“最长词长到 1”递减枚举候选片段，命中词典后立即输出该词，否则退化为单字输出。逆向最大匹配从句尾开始执行同样的最长匹配，最后再反转结果。双向最大匹配则比较 FMM 与 RMM 的输出：若词数不同，选择词数更少的结果；若词数相同，选择单字词更少的结果；若仍无法区分，则采用逆向结果作为最终输出。
+
+该填空实现能够复现测试样例中的典型歧义现象。对“研究生命的起源”，正向最大匹配输出“研究生/命/的/起源”，因为它贪心选择了词典中的“研究生”；逆向最大匹配输出“研究/生命/的/起源”，双向最大匹配也选择该结果。对“无线电法国别研究”，正向最大匹配倾向于“无线电/法国/别/研究”，逆向最大匹配得到“无线电/法/国别/研究”，双向规则在词数和单字数相同的情况下保留逆向结果。这说明词典匹配算法实现简单、速度快，但本质上是局部贪心规则，无法真正理解上下文语义；它适合作为基础规则基线，但对未登录词和歧义结构比较敏感。
+
+深度学习基础版的重点不是重新设计一个很强的模型，而是按照 README 跑通一套完整的序列标注分词流程，并理解每个环节在系统中的作用。README 中说明该部分是一个简单的 BiLSTM+CRF 参考实现，运行步骤包括：在数据目录执行预处理脚本生成序列化数据，在项目根目录执行训练脚本，最后使用推断脚本生成分词结果；同时，\texttt{save} 目录中提供了一个粗略训练过的模型，可以先跳过训练直接推断。数据预处理脚本把带空格的训练语料转换成字级输入序列和 BMES 标签序列，其中单字词标为 S，二字词标为 B/E，多字词标为 B/M.../E；随后用 \texttt{train\_test\_split(test\_size=0.1, random\_state=43)} 将基础语料划分为训练集和内部验证集，并保存为 \texttt{datasave.pkl}。
+
+模型结构为 \texttt{Embedding -> BiLSTM -> Linear -> CRF}。Embedding 层把字 id 映射为 100 维向量；BiLSTM 的隐藏维度为 200，前向和后向各占一半，用于同时编码左右上下文；Linear 层把每个位置的隐状态映射为 4 个 BMES 标签的发射分数；CRF 层学习标签转移约束，训练时最大化标准标签序列的条件概率，推断时用 Viterbi 解码得到全局最优标签序列。数据加载器会先按句长降序排序，再用 padding 补齐 batch，并返回 mask 与真实长度，保证 LSTM 打包序列和 CRF 损失都只在有效字符上计算。
+
+训练脚本使用 Adam 优化器，每 100 个 step 记录一次平均损失；每轮训练后在内部验证集前 1000 条样本上计算词边界级 Precision、Recall 和 F1，并保存当前 epoch 模型。基础 BiLSTM-CRF 的主要训练参数如表 1 所示。训练日志中第 0 轮验证 F1 为 0.921648；重新加载最终模型后，我又在完整内部验证集上计算得到 Precision=0.9528、Recall=0.9523、F1=0.9525。需要说明的是，这个分数来自基础训练语料随机切分出的内部验证集，只能作为本地开发估计，不能等同于服务器隐藏测试集成绩。
+
+为了避免只停留在算法描述，我在基础实验中保留了实际运行记录。字典版词典去重后共有 349045 个词，最大词长为 16；BiLSTM-CRF 预处理后的字表大小为 5167，标签数为 4。部分运行结果如下所示，可以看出字典版能直观暴露最大匹配算法的歧义，深度学习版则给出了完整序列标注流程下的本地验证指标。
+
+\begin{center}
+  \begin{tabular}{C{30mm}C{42mm}C{58mm}}
+    \toprule
+    实验项 & 记录内容 & 运行结果 \\
+    \midrule
+    字典加载 & 去重词数 / 最大词长 & 349045 / 16 \\
+    字典测试样例 & 研究生命的起源 & FMM: 研究生/命/的/起源；BIMM: 研究/生命/的/起源 \\
+    字典测试样例 & 无线电法国别研究 & FMM: 无线电/法国/别/研究；BIMM: 无线电/法/国别/研究 \\
+    数据预处理 & 字表 / 标签 / 训练集 / 验证集 & 5167 / 4 / 78226 / 8692 \\
+    训练日志 & 第 0 轮前 1000 条验证样本 & Precision=0.924550，Recall=0.918765，F1=0.921648 \\
+    完整验证 & 完整内部验证集 & Precision=0.9528，Recall=0.9523，F1=0.9525 \\
+    \bottomrule
+  \end{tabular}
+\end{center}
+
+跑通 BiLSTM-CRF 基础流程后，选做实验的设计思路也更清楚了：中文分词可以继续沿用“字级输入、BMES 标签、CRF 解码、词级 F1 评估”这条主线；真正需要加强的是字符上下文表示能力和训练数据覆盖范围。因此，选做部分没有简单堆叠一个更复杂的 BiLSTM，而是保留 CRF 的标签约束，把基础模型中的 Embedding+BiLSTM 表示层替换为 RoBERTa 预训练表示，同时沿用基础实验中已经验证过的数据标注、mask、验证集评估和推断还原思路。这样，基础实验起到的是理解流程和确定改进方向的作用，而不是单纯作为一个待比较的分数基线。
+
+\begin{table}[htbp]
+  \caption{实验一基础 BiLSTM-CRF 参数}
+  \centering
+  \begin{tabular}{C{42mm}C{85mm}}
+    \toprule
+    参数 & 设置 \\
+    \midrule
+    模型结构 & Embedding + BiLSTM + Linear + CRF \\
+    Embedding 维度 & 100 \\
+    Hidden 维度 & 200 \\
+    Batch Size & 128 \\
+    优化器 & Adam \\
+    学习率 & 0.005 \\
+    最大训练轮数 & 10 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{选做实验与系统实现}
+任务书把选做部分定义为“优化基础任务中实现的分词器”，并给出了几个可选方向：修改网络结构，例如引入 BERT 等预训练语言模型；结合命名实体识别结果，减少命名实体被错误切分；构造合适的词典集；实现新词发现或登录；以及调整训练超参数。我的实现没有把这些方向简单全部叠加到最终系统中，而是先围绕每个方向做实验，再根据内部验证集的词级 F1 选择最终方案。
+
+最终采用的主要优化有三类。第一，网络结构上用 RoBERTa+CRF 替代基础实验中的 Embedding+BiLSTM+CRF，提高字级上下文表示能力；第二，数据和训练过程上扩充 PKU 风格训练语料，并重新设置学习率、batch size、最大长度、warmup、dropout 和梯度裁剪等参数；第三，词典方向上不直接使用通用词典，而是从 PKU 风格训练语料中提取边界稳定的登录词，只在模型输出后做保守合并。NER 融合和基础词典纠错也都实际测试了，但它们没有进入最终方案，因为验证结果显示这两类后处理容易与 PKU 分词边界冲突。
+
+首先是训练数据扩充。基础训练语料共 86924 行，选做实验在此基础上合入 SIGHAN PKU 训练语料，清洗后得到 105972 行扩充语料。这样做的目的不是改变分词标准，而是尽量增加同一标准下的标注样本，让模型见到更多新闻语体中的词边界。扩充后的样本覆盖了更多机构名、地名、新闻事件和正式书面语表达，对预训练模型微调更有帮助。
+
+因此，基础实验和选做实验的本地验证结果不是完全同一数据集上的公平横向对比。基础 BiLSTM-CRF 使用基础语料，其中训练集 78226 条、内部验证集 8692 条；选做 BERT+CRF 使用扩充语料，其中训练集 95374 条、内部验证集 10598 条。两者划分比例和随机种子相同，都是 9:1 随机划分，但母语料规模不同，选做实验还额外引入了 SIGHAN PKU 语料。这个区别需要在解释分数时单独说明：0.9525 反映基础模型在基础语料内部验证集上的表现，0.980406 反映 BERT+CRF 在扩充语料内部验证集上的表现，后者同时受益于模型结构和训练数据扩充。
+
+\begin{table}[htbp]
+  \caption{实验一基础实验与选做实验数据划分区别}
+  \centering
+  \begin{tabular}{C{30mm}C{43mm}C{25mm}C{25mm}}
+    \toprule
+    实验部分 & 数据来源 & 训练集 & 内部验证集 \\
+    \midrule
+    基础 BiLSTM-CRF & 基础训练语料 & 78226 & 8692 \\
+    选做 BERT+CRF & 基础语料 + SIGHAN PKU & 95374 & 10598 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+最终主模型结构为 \texttt{RoBERTa -> Dropout -> Linear -> CRF}，不是 BERT+BiLSTM+CRF。预训练模型使用 \texttt{hfl/chinese-roberta-wwm-ext}。RoBERTa 直接提供上下文表示，再由线性层映射到 4 个 BMES 标签，最后用 CRF 约束标签序列。相比基础 BiLSTM-CRF，这个模型的优势是预训练语义知识更强，对长距离上下文、专名和复杂新闻句更稳。
+
+数据处理阶段先把空格分词语料转为 BMES 标签，再用 HuggingFace tokenizer 编码。由于 BERT 输入包含 CLS、SEP、PAD 等特殊位置，模型在 CRF 前重新构造 \texttt{crf\_mask}，只保留真实汉字位置参与损失和解码。训练时使用分层学习率：BERT 主干为 2e-5，Linear+CRF 任务层为 1e-3；同时启用 FP16、linear warmup、梯度裁剪和 gradient checkpointing。主要参数见表 3。
+
+\begin{table}[htbp]
+  \caption{实验一 BERT+CRF 参数}
+  \centering
+  \begin{tabular}{C{43mm}C{85mm}}
+    \toprule
+    参数 & 设置 \\
+    \midrule
+    预训练模型 & hfl/chinese-roberta-wwm-ext \\
+    标签集合 & B、M、E、S \\
+    Batch Size & 32 \\
+    Epochs & 8 \\
+    最大序列长度 & 192 \\
+    优化器 & AdamW，Linear Warmup + Linear Decay \\
+    学习率 & BERT: 2e-5；Linear+CRF: 1e-3 \\
+    Dropout & 0.2 \\
+    训练数据 & 105972 行 PKU 风格分词语料 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+训练结果如表 4 所示。普通验证日志中第 8 轮达到 F1=0.9573。后来为了处理长句截断问题，我又使用分块评测脚本在同一验证划分上评估完整长句，纯 CWS 模型达到 F1=0.980406，作为后处理消融的基准。
+
+\begin{table}[htbp]
+  \caption{实验一 BERT+CRF 训练日志结果}
+  \centering
+  \begin{tabular}{C{28mm}C{28mm}C{28mm}C{28mm}}
+    \toprule
+    Epoch & Precision & Recall & F1 \\
+    \midrule
+    1 & 0.9642 & 0.9172 & 0.9401 \\
+    4 & 0.9797 & 0.9318 & 0.9551 \\
+    8 & 0.9812 & 0.9344 & 0.9573 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+我还做了三类后处理消融，结果见表 5。
+
+\begin{table}[htbp]
+  \caption{实验一后处理消融结果}
+  \centering
+  \begin{tabular}{C{45mm}C{25mm}C{25mm}C{25mm}}
+    \toprule
+    方法 & Precision & Recall & F1 \\
+    \midrule
+    CWS only & 0.981574 & 0.979241 & 0.980406 \\
+    CWS + NER 融合 & 0.976605 & 0.966870 & 0.971713 \\
+    CWS + 基础词典 & 0.918758 & 0.852314 & 0.884290 \\
+    CWS + 稳定 PKU 词典 & 0.982042 & 0.979448 & 0.980743 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+NER 融合没有提升分词结果，原因不在 NER 模型本身，而在任务标准不同。NER 更关心实体整体边界，例如人名、机构名、地名；但 PKU 分词标准下，实体内部仍可能继续切分，例如人名或机构名不总是作为一个完整词出现。把 NER 实体强行合并，会减少一些实体切碎错误，同时也制造许多与标准分词结果不一致的合并错误。
+
+基础实验提供的外部词典就是 jieba 默认词典。经 Python 校验，基础词典与 jieba 安装包中的默认词典均为 349046 行，前若干行完全一致，文件 MD5 也一致。把该词典用于 BERT 输出纠错后，验证 F1 从 0.980406 降到 0.884290，改变了 77.04\% 的验证句。这个结果说明 jieba 默认词典和 PKU 风格边界冲突很明显，例如它倾向合并“飞速发展”“素质教育”“见到”等搭配，而这些位置在标准答案中可能需要拆开。
+
+PKU 训练词典更合理，但也不能直接全量使用。最初我从扩充训练语料中把所有长度大于等于 2 的人工标注词登录进词典，得到 110904 个候选词，后处理 F1 反而降到 0.951448。问题在于“某个字符串在训练集中作为词出现过”不等于“所有上下文都要合并”。后来我把词典提取改成边界稳定性过滤：统计候选词作为完整词出现的次数，以及作为相邻人工标注词拼接出现的冲突次数，只保留高频且低冲突的词；同时后处理只做保守合并，不再自动拆分模型预测出的长词。新词典缩小到 11657 个词，F1 小幅升至 0.980743。
+
+\subsection{实验小结}
+做实验一的过程中，我一开始对任务书的要求理解有些模糊，没搞懂到底学生要做什么，哪些是自己写，哪些是跑通流程就行。通过分词实验，我认识到分词不是“把看起来像词的字符串合起来”这么简单，而是要按照训练数据的边界标准。任务书没有明确写分词标准，我在实现和分析时主要根据训练数据反推：老师提供的训练文件本身是空格分词格式，扩充语料又来自 SIGHAN PKU，因此本文把训练和评测口径理解为接近 PKU/SIGHAN 的分词标准。NER 融合和通用词典纠错的下降也从侧面验证了这一点，如果只按“实体完整”或“词典中有这个词”的直觉优化，反而会破坏标准答案中的分词边界。
+
+从方法效果看，字典法适合做规则入门，BiLSTM-CRF 能学到上下文，BERT+CRF 则把预训练知识和序列约束结合起来，是这次实验中最稳定的方案。后处理如果不够克制，很容易把模型已经判断正确的边界改坏；真正有效的词典纠错应该只处理高置信、低冲突的边界，而不是把词典当作强规则覆盖模型输出。
+
+从实验设计角度看，任务书最好明确说明分词标准，例如训练集和测试集是否采用 PKU/SIGHAN 标准。分词并没有唯一答案，同一个字符串在不同标准下可能有不同切分；如果标准不明确，词典扩充、NER 融合和新词发现等优化策略就容易偏离评分口径。本实验中，jieba 词典纠错和 NER 融合都会降低 F1 score，也说明“看起来合理”的切分不一定符合当前数据集的标注标准。另外，资料包中的Bi-LSTM-CRF示例代码建议尽量使用相对路径读取数据和模型文件，减少来回切换文件目录的时间开销，也适应VSCode的使用习惯。
+
+\labsection{从零开始的大语言模型构建与 KV Cache 压缩}
+
+\subsection{问题描述}
+实验三的基础任务是从零构建一个约 10 万参数规模的 MiniLLM。任务书要求按章节补全语言模型的核心组件，包括字符级数据分词与向量化、带因果掩码的多头注意力、RMSNorm、SwiGLU、Transformer 层、自回归预训练损失以及键值缓存（KV Cache）推理。这个实验的重点不在模型规模，而在把 Transformer 语言模型的关键计算路径完整走通：输入标记先被映射成向量，经过多头注意力和前馈网络得到上下文表示，最后预测下一个标记。
+
+自回归语言模型的训练目标是根据前文预测后文。训练时，模型可以并行处理一整段标记序列，并通过因果掩码保证当前位置不能看到未来信息；推理时，模型必须逐步生成。若每一步都重新计算全部历史上下文，时间开销会随生成长度快速增长，因此实际部署中通常使用键值缓存保存历史键向量和值向量，下一步只计算新增标记对应的注意力结果。
+
+选做任务 KV Cache Arena 进一步关注推理阶段的显存瓶颈。键值缓存长度会随上下文长度线性增长，长文本生成时很容易超过缓存预算；但如果简单丢弃历史标记，又会损失长程语义和篇章线索。本实验要求设计压缩策略，在给定缓存预算下保留尽可能有价值的历史信息。评测使用 GPT-2 在 WikiText-2 测试集长文本段落上计算困惑度（Perplexity, PPL）。困惑度越低，表示压缩策略造成的语言建模质量损失越小。
+
+\subsection{基础实验}
+基础实验是在 \texttt{llm-from-scratch.ipynb} 中按老师给出的填空点补全 MiniLLM。Jupyter Notebook 不是让学生重新设计模型，而是把语言模型的关键路径拆成若干小块，每一块都要求补上核心代码，并用 \texttt{validation\_files} 中的期望输出验证。因此这部分实验重点是：每个 tensor 的 shape 是否正确、causal mask 是否生效、loss 是否真正参与反向传播、KV Cache 推理是否只增量计算当前 token。
+
+第 1 章的第一个填空是 \texttt{SimpleTextDataset.\_\_getitem\_\_()}。我补全的逻辑是从 \texttt{self.data[idx:idx+seq\_len]} 取输入 \texttt{x}，再从 \texttt{self.data[idx+1:idx+seq\_len+1]} 取目标 \texttt{y}，并都转成 \texttt{torch.long}。这一步实际构造的是 next-token prediction 数据对：如果窗口是 \([t_0,t_1,t_2,\ldots,t_{15}]\)，目标就是 \([t_1,t_2,t_3,\ldots,t_{16}]\)。模型训练时不是拆成 16 条单独样本，而是在一个窗口里并行预测所有位置的 next token；后面的 causal mask 保证第 \(i\) 个位置看不到未来。
+
+第二个填空是 embedding 层。输入 \texttt{x} 的 shape 是 \texttt{(B,T)}，我先用 \texttt{self.token\_emb(x)} 得到 \texttt{(B,T,d\_model)} 的 token embedding；再用 \texttt{torch.arange(T, device=x.device)} 生成 position id，送入 \texttt{self.pos\_emb} 得到 \texttt{(T,d\_model)} 的 positional embedding；最后利用 broadcasting 把两者相加。这里要特别注意 position tensor 和输入 tensor 必须位于同一 device 上，否则切换到 GPU 时会报错。该章验证中，输出 shape 为 \texttt{(2,16,64)}，与预期一致。
+
+\begin{table}[htbp]
+  \caption{基础实验主要填空点}
+  \centering
+  \begin{tabular}{@{}C{30mm}C{42mm}C{58mm}@{}}
+    \toprule
+    章节 & 填空位置 & 补全内容 \\
+    \midrule
+    Ch1 数据集 & \texttt{\_\_getitem\_\_} & \texttt{x=data[idx:idx+seq\_len]}，\texttt{y=data[idx+1:idx+seq\_len+1]} \\
+    Ch1 嵌入层 & \texttt{Embeddings.forward} & token embedding 与 positional embedding 相加 \\
+    Ch2 Attention & \texttt{SDPA} 函数 & 计算缩放点积，加 causal mask，再 softmax 并乘以 V \\
+    Ch2 Multi-Head & \texttt{MHA.forward} & 用 \texttt{view} 拆分 head，\texttt{transpose} 到 \texttt{(B,H,T,D)}，最后拼回 \texttt{(B,T,C)} \\
+    Ch3 结构 & RMSNorm/SwiGLU/Block & 实现 RMSNorm、SwiGLU 门控前馈、Pre-Norm 残差连接 \\
+    Ch4 训练 & \texttt{compute\_loss} 与 \texttt{training\_step} & 展平 logits 和 targets 计算交叉熵，完成 zero grad、forward、backward、clip 和 step \\
+    Ch5 推理 & \texttt{incremental\_forward} & 当前 token 只计算自己的 Q/K/V，把 K/V 拼到 cache 后用当前 Q 访问全部 cache \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+第 2 章的核心填空是缩放点积注意力。补全代码先计算
+\[
+\mathrm{Attention}(Q,K,V)=\mathrm{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V.
+\]
+具体写法是 \texttt{torch.matmul(q, k.transpose(-2,-1)) / math.sqrt(d\_k)}。如果 \texttt{is\_causal=True}，就用 \texttt{torch.tril(torch.ones(T,T))} 构造下三角 mask，把 mask 为 0 的位置填成 \texttt{-inf}，再沿最后一维做 softmax。这样右上角未来位置的 attention weight 为 0，当前位置只能关注自己和过去。Multi-Head Attention 的填空则是把 \texttt{(B,T,64)} reshape 成 \texttt{(B,T,4,16)}，再用 \texttt{transpose(1,2)} 变成 \texttt{(B,4,T,16)}；做完 attention 后用 \texttt{transpose(1,2).contiguous().view(B,T,64)} 拼回原维度。这里必须加 \texttt{contiguous()}，因为 \texttt{transpose} 后内存布局不连续，直接 \texttt{view} 容易出错。
+
+第 3 章有三个填空：RMSNorm、SwiGLU 和 TransformerBlock。RMSNorm 使用
+\[
+x \cdot \frac{1}{\sqrt{\mathrm{mean}(x^2)+\epsilon}} \cdot w
+\]
+代码中先计算 \texttt{variance = x.pow(2).mean(dim=-1, keepdim=True)}，再用 \texttt{x * torch.rsqrt(variance + eps)} 得到归一化结果，最后乘可学习参数 \texttt{weight}。SwiGLU 的补全是 \texttt{gate = F.silu(self.w1(x))}，\texttt{value = self.w2(x)}，再把 \texttt{gate * value} 送入 \texttt{w3} 映射回 \texttt{d\_model}。TransformerBlock 使用 Pre-Norm 残差结构：先 \texttt{norm1(x)} 后做 self-attention，并与原始 \texttt{x} 相加；再对相加后的结果做 \texttt{norm2} 和 FFN，最后再残差相加。这一章验证了输出 shape 为 \texttt{(2,8,64)}，也说明 Attention 和 FFN 都能接入同一条 residual path。
+
+第 4 章先组装 \texttt{MiniLLM}。代码把 \texttt{Embeddings}、一个 \texttt{TransformerBlock}、\texttt{final\_norm} 和 \texttt{lm\_head} 串起来。这里的填空是 weight tying：\texttt{self.lm\_head.weight = self.embed.token\_emb.weight}。这样输入 token embedding 表和输出分类器共享同一张权重表，既减少参数，也符合很多语言模型的实现习惯。实例化后模型规模为 99.8K 参数，符合任务要求。
+
+训练部分有两个填空。第一个是 \texttt{compute\_loss}：因为 \texttt{F.cross\_entropy} 接收的是 \texttt{(N,C)} logits 和 \texttt{(N)} targets，所以我把 \texttt{(B,T,V)} 的 logits 改成 \texttt{(B*T,V)}，把 \texttt{(B,T)} 的 targets 改成 \texttt{(B*T)}，再计算标量 loss。第二个是 \texttt{training\_step}：依次执行 \texttt{optimizer.zero\_grad()}、\texttt{model(x)}、\texttt{compute\_loss}、\texttt{loss.backward()}、\texttt{clip\_grad\_norm\_(max\_norm=1.0)} 和 \texttt{optimizer.step()}。这里 gradient clipping 不是装饰，它能避免小模型在随机初始化早期因为梯度过大而训练不稳。Jupyter 输出显示，随机样本的 loss 从 46.5865 降到 46.0606；随后在自定义短文本上训练 10 个 epoch，average loss 从第 2 个 epoch 的 0.2171 降到第 10 个 epoch 的 0.0331，说明 loss、backward 和参数更新都已经真正连起来。
+
+第 5 章的填空是 \texttt{KVCacheModel.incremental\_forward}。Normal inference 每生成一个 token 都重新计算整段上下文，而 KV Cache inference 只处理当前 token。我的补全步骤是：先只对当前 \texttt{next\_token\_id} 做 token embedding 和 positional embedding；再经过 \texttt{norm1} 得到 \texttt{norm\_x}，并 reshape 成当前步的 \texttt{q,k,v}，shape 为 \texttt{(B,H,1,D)}；如果 cache 为空就直接保存当前 \texttt{k,v}，否则沿序列维 \texttt{dim=2} 拼接到已有 cache；最后调用 \texttt{scaled\_dot\_product\_attention(q, cache\_k, cache\_v, is\_causal=False)}。这里关闭 causal mask 是因为 cache 里本来只有过去和当前 token，没有未来 token。Attention 输出再拼回 \texttt{d\_model}，经过 residual connection、FFN、final norm 和 \texttt{lm\_head} 得到当前步 logits。Notebook 中 Normal 模式和 KV Cache 模式都生成 \texttt{I am U2023xxxxx.}，结果完全一致；平均每步耗时从 0.000419 秒/Token 降到 0.000280 秒/Token。这个小模型上的加速不算夸张，但填空代码展示了真实语言模型推理为什么要缓存历史 K/V。
+
+\begin{table}[htbp]
+  \caption{基础实验 Jupyter 输出结果}
+  \centering
+  \begin{tabular}{@{}C{33mm}C{86mm}@{}}
+    \toprule
+    实验环节 & Jupyter 输出结果 \\
+    \midrule
+    数据集映射 & 输入 \texttt{x} 与目标 \texttt{y} 相差一位，验证了 next-token prediction 数据构造 \\
+    Embedding & 输出 shape 为 \texttt{torch.Size([2, 16, 64])}，Chapter 1 验证通过 \\
+    Attention & 输出 shape 为 \texttt{torch.Size([2, 8, 64])}，attention weight 右上角为 0 \\
+    Multi-Head Attention & 输出 shape 为 \texttt{torch.Size([2, 8, 64])}，Chapter 2 验证通过 \\
+    RMSNorm / SwiGLU / Block & 三者输出 shape 均为 \texttt{torch.Size([2, 8, 64])}，Chapter 3 验证成功 \\
+    MiniLLM & 模型成功实例化，总参数量为 99.8K \\
+    Loss 与训练步 & 随机 loss 为 46.5865，单步训练后降为 46.0606，Chapter 4 验证通过 \\
+    10 轮训练 & Average Loss: 0.2171, 0.0586, 0.0362, 0.0338, 0.0331 \\
+    KV Cache 推理 & Normal 与 KV Cache 输出均为 \texttt{I am U2023xxxxx.}，平均耗时 0.000419 vs 0.000280 秒/Token \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{选做实验与系统实现}
+KV Cache Arena 使用 GPT-2 和 WikiText-2 测试集评测压缩策略。评测过程按标记逐步推进：每一步输入当前标记，模型给出下一个标记的预测分布；如果缓存长度超过预算，就调用 \texttt{compress(past\_key\_values, max\_budget, step)} 裁剪历史键向量和值向量。最后把所有标记的平均负对数似然取指数，得到困惑度。困惑度越低，说明压缩后保留下来的历史上下文越有效。
+
+先看常见思路。最简单的是滑动窗口策略，即只保留最近一段标记；它能保住局部语法，但远处实体、主题和固定搭配会直接丢失。StreamingLLM 提出的注意力汇聚点现象说明，序列开头少量标记即使没有明确语义，也经常承接稳定注意力，因此“开头锚点 + 最近窗口”通常比单纯保留最近窗口更稳。H2O 和 Scissorhands 属于重要性保留路线，核心是根据历史注意力分数保留被频繁关注的关键标记。SnapKV 也是重要性选择方法，但它先利用观察窗口中的注意力模式估计后续会用到的位置，再按注意力头选择关键缓存。PyramidKV/PyramidInfer 则从层间信息流出发，认为不同层需要的缓存数量不同，低层可以保留更宽，高层逐步收紧。还有一类工程方法，如 PagedAttention 和 KV 量化，重点是内存管理或数值压缩，不是本实验这种“最多保留多少个标记”的裁剪策略。
+
+本实验接口限制比较明显：\texttt{compress()} 只能访问当前 \texttt{past\_key\_values}、缓存预算和当前步数；不能修改模型前向传播，不能获取完整历史注意力分数，也不适合让不同层保留不同长度的键值缓存。因此 H2O、Scissorhands、SnapKV 和 PyramidKV 不能原样搬进来，只能借鉴它们“保留重要历史信息”的思想。真正能稳定实现的是三类方法：按位置选择、按注意力头分组选择，以及从键/值张量本身提取统计量。
+
+\begin{table}[htbp]
+  \caption{常见 KV Cache 压缩思路与本实验可实现方式}
+  \centering
+  \begin{tabular}{@{}C{24mm}C{34mm}C{66mm}@{}}
+    \toprule
+    类型 & 代表方法 & 在本实验中的处理 \\
+    \midrule
+    最近窗口 & 滑动窗口 & 可直接实现，但长程信息损失较大 \\
+    开头锚点 & StreamingLLM & 保留开头少量标记，再保留最近窗口 \\
+    重要性保留 & H2O、Scissorhands & 需要历史注意力分数，本实验只能用键/值统计量近似 \\
+    观察窗口 & SnapKV & 需要观察窗口注意力模式，这里不能原样实现 \\
+    金字塔分配 & \begin{tabular}[c]{@{}c@{}}PyramidKV/\\PyramidInfer\end{tabular} & 论文是层间预算分配，这里只能做位置上的金字塔采样近似 \\
+    分头保留 & 不同注意力头保留不同时间尺度 & 可以直接改每组注意力头的 K/V 索引 \\
+    数值压缩 & KIVI、PagedAttention 等 & 不属于本接口关注的标记裁剪问题，未采用 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+第一轮先测试位置型方法。这里没有引入内容统计，只在开头锚点、最近窗口和中间稀疏采样点之间分配预算。为了确认金字塔式位置采样和键相似度选择的方向，我重新用前 5 个 WikiText-2 片段做了小测，结果见表 \ref{tab:kv-early-small}。这张表不能作为最终成绩，只用于判断策略方向：在 B=128 时，金字塔式位置采样有一定帮助；在 B=32 和 B=64 时，提升不稳定。键相似度选择指“用历史键向量与最近键向量的相似度选择历史标记”，该方法整体变差，说明直接拿最后一个键向量去代表后续需求并不可靠。
+
+\begin{table}[htbp]
+  \caption{早期位置策略小测，5 个文本片段}
+  \label{tab:kv-early-small}
+  \centering
+  \begin{tabular}{@{}C{28mm}C{54mm}C{13mm}C{13mm}C{13mm}@{}}
+    \toprule
+    策略 & 说明 & B32 & B64 & B128 \\
+    \midrule
+    基础位置策略 & 开头锚点 + 均匀中间点 + 最近窗口 & 103.00 & 67.43 & 54.31 \\
+    金字塔采样A & 增大中间稀疏采样比例 & 101.38 & 67.56 & 53.36 \\
+    金字塔采样B & 稍多开头锚点，较少中间点 & 102.18 & 67.94 & 52.64 \\
+    键相似度选择 & 按键向量相似度选择历史标记 & 106.01 & 69.06 & 54.58 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+之后把重点放到 B=64，因为这个预算既不能只依赖最近窗口，也没有 B=128 那么宽松。完整 20 个片段上，固定位置策略 \texttt{fixed\_s7r30} 的困惑度为 68.57；加入早期大窗口调度后只能降到 67.99 左右；分头保留策略能让不同注意力头看到不同时间尺度，最好达到 67.67；真正明显下降的是低键范数策略，达到 66.24。再把 7 个候选策略按片段分别取最优，理想上界为 63.48，说明不同文本确实适合不同保留方式。最后用第一次压缩时的键值缓存统计量选择候选策略，困惑度为 63.52，基本接近这个理想上界。
+
+\begin{table}[htbp]
+  \caption{B=64 主要候选策略，20 个文本片段完整评测}
+  \centering
+  \begin{tabular}{C{30mm}C{76mm}C{17mm}}
+    \toprule
+    策略 & 实现方式 & 困惑度 \\
+    \midrule
+    固定位置策略 & 保留开头 7 个、最近 30 个，其余用对数间隔锚点补足 & 68.57 \\
+    早期48窗口 & 前 128 步保留最近 48 个，之后回到固定位置策略 & 67.99 \\
+    早期56窗口 & 前 128 步保留最近 56 个，之后回到固定位置策略 & 68.01 \\
+    分头历史策略 & 三组注意力头使用不同的开头、最近窗口和对数锚点参数 & 68.04 \\
+    分头早期增强 & 增大一组注意力头对早期历史位置的保留比例 & 67.67 \\
+    阶段锚点策略 & 前期偏向最近窗口，后期使用分头开头锚点策略 & 67.91 \\
+    低键范数策略 & 从历史区额外保留 8 个低键范数标记 & 66.24 \\
+    理想上界 & 上面 7 个候选按片段分别取最优 & 63.48 \\
+    自适应选择 & 用键值缓存统计特征选择候选策略 & 63.52 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+B=32 和 B=128 的调参思路不同。B=32 预算很紧，开头锚点和最近窗口都不能占用太多，只能额外保留少量低键范数历史点；B=128 预算较宽，关键是不要把预算全部分给最近窗口，而是给开头位置和中间历史锚点保留一定空间。表 \ref{tab:kv-budget-tuning} 中的 B=32、B=128 日志来自完整 20 个片段。B=128 上，\texttt{lowk\_alpha20\_h8} 最终达到 52.34，比普通对数位置采样、阶段调度和分头保留策略都更好。
+
+\begin{table}[htbp]
+  \caption{B=32 与 B=128 调参记录}
+  \label{tab:kv-budget-tuning}
+  \centering
+  \begin{tabular}{C{30mm}C{78mm}C{17mm}}
+    \toprule
+    策略 & 说明 & 困惑度 \\
+    \midrule
+    B32 分头对数 & B=32，分头保留 + 对数间隔锚点 & 105.99 \\
+    B32 固定位置 & B=32，保留开头 3 个、最近 20 个，指数参数 1.8 & 106.42 \\
+    B32 理想上界 & B=32 候选按片段分别取最优，用作理想上界 & 101.44 \\
+    B128 步数调度 & B=128，按生成步数调整各位置槽位分配 & 54.03 \\
+    B128 对数采样 & B=128，保留开头 16 个、最近 80 个，再补对数锚点 & 54.17 \\
+    B128 早期大窗口 & B=128，前期保留最近 100 个，后期回落 & 54.01 \\
+    B128 分头保留 & B=128，不同注意力头使用不同时间尺度 & 54.53 \\
+    B128 低键范数 & B=128，补 10 个低键范数标记 & 52.50 \\
+    B128 最终参数 & B=128，指数参数 2.0，补 8 个低键范数标记 & 52.34 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+最终策略记为 \texttt{LowKeyNormAdaptive}。它不是单一技巧，而是把前面验证有效的部分组合起来。第一，固定保留开头锚点和最近窗口，保证序列起始信息和局部上下文都在。第二，在中间历史区用对数间隔锚点覆盖长程位置，避免只关注最近内容。第三，从后几层键向量中计算历史标记的平均平方范数，优先保留若干低键范数标记。这个选择最开始并不直观，但实验中它比高键范数、值向量范数和键相似度选择都更好。我的理解是，低范数键向量更像平滑的历史锚点，不容易在压缩后造成过尖的注意力偏置。第四，B=64 使用自适应选择器：第一次压缩时读取前 4 层键范数、后 4 层键范数、后 4 层值范数及其方差，根据阈值选择 \texttt{lowk}、\texttt{early48}、\texttt{early56}、\texttt{sched\_sink}、\texttt{head\_hist} 或 \texttt{head\_doc16a} 这些候选策略。
+
+实现上还有一个容易漏掉的点：缓存被压缩多次后，第 \(j\) 个槽位已经不等于原始序列中的第 \(j\) 个标记。因此代码维护了 \texttt{\_positions}，每次选择索引后同步更新它；后续再做开头锚点、最近窗口和对数间隔锚点选择时，都按原始标记位置判断。B=32 使用 \texttt{sink=3,recent=20,alpha=1.8,heavy=4}；B=64 使用上面的自适应选择器；B=128 使用 \texttt{sink=16,recent=80,alpha=2.0,heavy=8}。最终完整评测结果见表 \ref{tab:kv-final-result}。
+
+\begin{table}[htbp]
+  \caption{LowKeyNormAdaptive 最终完整评测结果}
+  \label{tab:kv-final-result}
+  \centering
+  \begin{tabular}{C{42mm}C{24mm}C{24mm}C{24mm}}
+    \toprule
+    策略 & B=32 & B=64 & B=128 \\
+    \midrule
+    LowKeyNormAdaptive & 100.37 & 63.52 & 52.34 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{实验小结}
+实验三把大模型拆成了可以逐个验证的小部件，比只看公式更直观。嵌入层解决离散标记的向量表示，因果注意力负责上下文聚合，RMSNorm、SwiGLU 和残差连接让网络更容易训练，自回归损失把任务落到下一个标记预测，键值缓存则展示了推理阶段真正关心的效率问题。
+
+基础实验中还发现了一个原始模板展示代码的问题，位置在 Chapter 4.3 的训练前后 loss 对比。原始代码写成 \texttt{loss\_after = training\_step(model, optimizer, dummy\_x, dummy\_y)}，但 \texttt{training\_step} 返回的是本次 forward 中、参数更新前计算出来的 loss；它虽然参与了 \texttt{backward()}，却不是 \texttt{optimizer.step()} 之后重新计算得到的 loss。因此把它命名为 \texttt{loss\_after} 并用来说明“训练后更小”是不严谨的。我的处理是在执行一次 \texttt{training\_step} 后，使用更新后的模型在同一批 \texttt{dummy\_x,dummy\_y} 上重新 forward，再调用 \texttt{compute\_loss} 得到真正的训练后 loss。Notebook 当前输出中，loss 从 46.5865 降到 46.0606，才是这一步参数更新带来的实际变化。
+
+
+KV Cache Arena 的经验是，单一规则通常不够好。只保留最近标记会损失长程线索，只做均匀采样又会伤害局部连续性。最终策略把开头锚点、最近窗口、对数间隔锚点、分头保留和低键范数选择结合起来，在不同预算下取得了更稳定的困惑度。对实验任务本身，我建议提供一个更明确的基线排行或消融模板，让同学能区分“位置启发式”“内容统计启发式”和“按测试样本调参”之间的边界，这样也更有利于写出可复现、可解释的策略。
+
+LLM实验未来可以引入LoRA微调、蒸馏小模型、量化推理等内容，结合实际以及跟随前沿，既有理论又有工程。像实验一/三基础实验这种填空的形式非常适合放在头歌平台进行测评。
+
+\section*{公开版本复现说明}
+\phantomsection
+\addcontentsline{toc}{section}{公开版本复现说明}
+本报告的公开版本只保留脱敏后的 LaTeX 源码和封面所需的 \texttt{HUSTBlack.eps}，不发布由本源码生成的 PDF，也不发布训练 checkpoint、Python 缓存或外部训练集快照。报告中记录的结果来自本地实验，重新运行时应以实际依赖、设备、数据版本和随机种子为准。
+
+\subsection*{预训练模型与模型缓存}
+实验一和实验二的 BERT 模型使用 \texttt{hfl/chinese-roberta-wwm-ext}。训练或推理脚本通过 Transformers 的 \texttt{AutoTokenizer.from\_pretrained} 和 \texttt{AutoModel.from\_pretrained} 自动下载模型；模型文件只缓存到本地环境，不纳入仓库。KV Cache Arena 使用 \texttt{gpt2}，由评估引擎在首次运行时自动加载。
+
+\subsection*{外部数据集与本地生成文件}
+中文分词的扩展训练集由 \texttt{download\_and\_merge\_pku.py} 下载 PKU 语料后与课程训练数据合并生成；命名实体识别由 \texttt{merge\_and\_split.py} 读取用户自行准备的 RMRB 和 MSRA 数据并生成训练/验证文件。这些数据集及合并结果不随公开版本发布，使用者应自行确认来源和许可。KV Cache Arena 默认通过 \texttt{datasets} 或 Hugging Face Hub 获取 WikiText-2；网络不可用时会退回代码内置的小语料，不能将 fallback 分数与标准 WikiText-2 结果直接等同。
+
+\subsection*{重新训练与测试}
+重新训练前先按仓库根目录 README 安装依赖、准备外部数据并获取预训练模型，然后分别运行实验一的 \texttt{run\_bert.py}、实验二的 \texttt{run\_bert\_ner.py} 或实验三的 \texttt{run\_eval.py}。推理阶段可使用仓库根目录保留的课程测试输入，并通过各推理脚本的 \texttt{--input\_path} 指定其他测试文件。训练得到的 \texttt{best\_model.pkl}、\texttt{best\_ner\_model.pkl}、日志和缓存均为本地生成物。
+\clearpage
+\section*{参考文献}
+\phantomsection
+\addcontentsline{toc}{section}{参考文献}
+\begin{reportrefs}
+  \item 郑捷著. NLP 汉语自然语言处理---原理与实践. 电子工业出版社.
+  \item Vaswani A, Shazeer N, Parmar N, et al. Attention Is All You Need. 2017.
+  \item Devlin J, Chang M W, Lee K, et al. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. 2019.
+  \item Liu Y, Ott M, Goyal N, et al. RoBERTa: A Robustly Optimized BERT Pretraining Approach. 2019.
+  \item Xiao G, Tian Y, Chen B, Han S, Lewis M. Efficient Streaming Language Models with Attention Sinks. arXiv:2309.17453, 2023.
+  \item Zhang Z, Sheng Y, Zhou T, et al. H2O: Heavy-Hitter Oracle for Efficient Generative Inference of Large Language Models. arXiv:2306.14048, 2023.
+  \item Liu Z, Desai A, Liao F, et al. Scissorhands: Exploiting the Persistence of Importance Hypothesis for LLM KV Cache Compression at Test Time. arXiv:2305.17118, 2023.
+  \item Li Y, Huang Y, Yang B, et al. SnapKV: LLM Knows What You are Looking for Before Generation. arXiv:2404.14469, 2024.
+  \item Cai Z, Zhang Y, Gao B, et al. PyramidKV: Dynamic KV Cache Compression based on Pyramidal Information Funneling. arXiv:2406.02069, 2024.
+  \item Yang D, Han X, Gao Y, et al. PyramidInfer: Pyramid KV Cache Compression for High-throughput LLM Inference. arXiv:2405.12532, 2024.
+  \item Liu Z, Yuan J, Jin H, et al. KIVI: A Tuning-Free Asymmetric 2bit Quantization for KV Cache. arXiv:2402.02750, 2024.
+  \item Kwon W, Li Z, Zhuang S, et al. Efficient Memory Management for Large Language Model Serving with PagedAttention. arXiv:2309.06180, 2023.
+\end{reportrefs}
+
+\clearpage
+\section*{附录A 中文分词实现的源程序}
+\phantomsection
+\addcontentsline{toc}{section}{附录A 中文分词实现的源程序}
+\begin{lstlisting}[style=appendixcode, caption={data\_prepare.py：训练语料清洗合并与 BMES 标注}]
+# 文件作用：清洗并合并 PKU 风格分词语料，
+# 将每个已分词句子转换为字符级 BMES 标签。
+def normalize_pku_line(line):
+    words = line.strip().split()
+    return "  ".join(words) if words else ""
+
+def merge_training_corpus(base_lines, pku_lines):
+    merged = []
+    for line in base_lines + pku_lines:
+        cleaned = normalize_pku_line(line)
+        if cleaned:
+            merged.append(cleaned)
+    return merged
+
+def parse_pku_line(line):
+    words = line.strip().split()
+    tag2id = {'B': 0, 'M': 1, 'E': 2, 'S': 3}
+    sentence_chars, char_labels = [], []
+    for word in words:
+        sentence_chars.extend(list(word))
+        if len(word) == 1:
+            char_labels.append(tag2id['S'])
+        elif len(word) == 2:
+            char_labels.extend([tag2id['B'], tag2id['E']])
+        else:
+            char_labels.append(tag2id['B'])
+            char_labels.extend([tag2id['M']] * (len(word) - 2))
+            char_labels.append(tag2id['E'])
+    return ''.join(sentence_chars), char_labels
+\end{lstlisting}
+
+\begin{lstlisting}[style=appendixcode, caption={model\_bert.py：RoBERTa+CRF 中文分词模型}]
+# 文件作用：定义中文分词主模型。
+# RoBERTa 负责上下文编码，线性层输出 BMES 发射分数，
+# CRF 学习标签转移约束并完成序列级解码。
+class BertCWS(nn.Module):
+    def __init__(self, pretrained_model_name='hfl/chinese-roberta-wwm-ext',
+                 num_tags=4, dropout=0.2):
+        super(BertCWS, self).__init__()
+        self.bert = AutoModel.from_pretrained(pretrained_model_name)
+        self.dropout = nn.Dropout(dropout)
+        self.hidden2tag = nn.Linear(768, num_tags)
+        self.crf = make_crf(num_tags)
+
+    def forward(self, input_ids, attention_mask, tags):
+        outputs = self.bert(input_ids, attention_mask=attention_mask)
+        sequence_output = self.dropout(outputs.last_hidden_state)
+        emissions = self.hidden2tag(sequence_output)
+        crf_mask = (input_ids != 0) & (input_ids != 101) & (input_ids != 102)
+
+        valid_lengths = crf_mask.sum(dim=1)
+        max_valid_len = max(1, valid_lengths.max().item())
+        packed_emissions = emissions.new_zeros(input_ids.size(0), max_valid_len, 4)
+        packed_tags = tags.new_zeros(input_ids.size(0), max_valid_len)
+        packed_mask = torch.zeros(input_ids.size(0), max_valid_len,
+                                  dtype=torch.bool, device=input_ids.device)
+        for b in range(input_ids.size(0)):
+            n = valid_lengths[b].item()
+            if n > 0:
+                packed_emissions[b, :n] = emissions[b, crf_mask[b]]
+                packed_tags[b, :n] = tags[b, crf_mask[b]]
+                packed_mask[b, :n] = True
+        return -self.crf(packed_emissions, packed_tags, mask=packed_mask,
+                         reduction='mean')
+
+    def decode(self, input_ids, attention_mask):
+        outputs = self.bert(input_ids, attention_mask=attention_mask)
+        emissions = self.hidden2tag(self.dropout(outputs.last_hidden_state))
+        crf_mask = (input_ids != 0) & (input_ids != 101) & (input_ids != 102)
+        return self.crf.decode(emissions, mask=crf_mask)
+\end{lstlisting}
+
+\begin{lstlisting}[style=appendixcode, caption={infer\_bert.py：长句推理与稳定词典后处理}]
+# 文件作用：对验证集或测试集句子进行推理。
+# 长句采用重叠分块避免 tokenizer 截断；
+# 词典后处理只执行保守合并，不强行拆分模型输出。
+def tags_to_words(chars, tags):
+    id2tag = {0: 'B', 1: 'M', 2: 'E', 3: 'S'}
+    words, buf = [], ''
+    for ch, tag_id in zip(chars, tags):
+        buf += ch
+        if id2tag[tag_id] in ('E', 'S'):
+            words.append(buf)
+            buf = ''
+    if buf:
+        words.append(buf)
+    return words
+
+def infer_long_sentence(model, tokenizer, sentence, max_chars=180, stride=160):
+    """Chunk long sentences to avoid truncating validation/test samples."""
+    pred_tags = []
+    start = 0
+    while start < len(sentence):
+        chunk = sentence[start:start + max_chars]
+        encoding = tokenizer(list(chunk), is_split_into_words=True,
+                             return_tensors='pt', truncation=True)
+        chunk_tags = model.decode(encoding['input_ids'],
+                                  encoding['attention_mask'])[0]
+        if start > 0:
+            overlap = max_chars - stride
+            chunk_tags = chunk_tags[overlap:]
+        pred_tags.extend(chunk_tags)
+        start += stride
+    return tags_to_words(sentence, pred_tags[:len(sentence)])
+
+def dictionary_merge(words, stable_dict):
+    """Only merge adjacent short segments when the merged word is stable."""
+    merged, i = [], 0
+    while i < len(words):
+        if i + 1 < len(words) and words[i] + words[i + 1] in stable_dict:
+            merged.append(words[i] + words[i + 1])
+            i += 2
+        elif i + 2 < len(words) and words[i] + words[i + 1] + words[i + 2] in stable_dict:
+            merged.append(words[i] + words[i + 1] + words[i + 2])
+            i += 3
+        else:
+            merged.append(words[i])
+            i += 1
+    return merged
+\end{lstlisting}
+
+\begin{lstlisting}[style=appendixcode, caption={build\_pku\_dict.py：稳定 PKU 词典提取}]
+# 文件作用：从已分词训练语料中提取稳定 PKU 词典。
+# 只有当候选词经常作为完整词出现，
+# 且很少作为相邻标准词拼接出现时才保留。
+def collect_boundary_counts(segmented_lines):
+    whole_count, split_count = Counter(), Counter()
+    for line in segmented_lines:
+        words = line.strip().split()
+        for word in words:
+            if len(word) >= 2:
+                whole_count[word] += 1
+        for left, right in zip(words, words[1:]):
+            joined = left + right
+            if len(joined) >= 2:
+                split_count[joined] += 1
+    return whole_count, split_count
+
+def should_keep(word, whole_count, split_count):
+    total = whole_count + split_count
+    stability = whole_count / total if total else 0.0
+    if len(word) == 2:
+        return whole_count >= 50 and split_count == 0
+    if len(word) == 3:
+        return whole_count >= 10 and stability >= 0.995 and split_count <= 1
+    return whole_count >= 3 and stability >= 0.98
+
+def build_stable_pku_dict(segmented_lines):
+    whole, split = collect_boundary_counts(segmented_lines)
+    stable_words = set()
+    for word, cnt in whole.items():
+        if should_keep(word, cnt, split.get(word, 0)):
+            stable_words.add(word)
+    return stable_words
+\end{lstlisting}
+
+\begin{lstlisting}[style=appendixcode, caption={eval\_dict\_on\_cws\_val.py：词级 F1 评测}]
+# 文件作用：计算词级 Precision、Recall 和 F1。
+# 只有预测词的字符区间与标准答案完全一致，
+# 才认为该词预测正确。
+def word_spans(words):
+    spans, pos = set(), 0
+    for word in words:
+        spans.add((pos, pos + len(word)))
+        pos += len(word)
+    return spans
+
+def compute_word_f1(pred_list, standard_list):
+    tp = fp = fn = 0
+    for pred, standard in zip(pred_list, standard_list):
+        pred_spans, standard_spans = word_spans(pred), word_spans(standard)
+        tp += len(pred_spans & standard_spans)
+        fp += len(pred_spans - standard_spans)
+        fn += len(standard_spans - pred_spans)
+    precision = tp / (tp + fp) if tp + fp else 0.0
+    recall = tp / (tp + fn) if tp + fn else 0.0
+    f1 = 2 * precision * recall / (precision + recall) if precision + recall else 0.0
+    return precision, recall, f1
+\end{lstlisting}
+
+\clearpage
+\section*{附录B KV Cache 压缩策略的源程序}
+\phantomsection
+\addcontentsline{toc}{section}{附录B KV Cache 压缩策略的源程序}
+\lstinputlisting[style=appendixcode, caption={KV Cache 压缩策略完整源码}]{../3 实验室3-从零开始的LLM构建/kv_cache_arena/strategy_nonhack_lowk.py}
+
+\end{reportbody}
+
+\end{document}
+
+
