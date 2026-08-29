@@ -17,8 +17,8 @@
 | 离散数学（二）   | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIA%20离散数学（二）) |
 | 数值分析         | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIIA%20数值分析) |
 | 计卓-一元分析    | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IA%20计卓-一元分析) |
-| 矩阵论（研）     | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/研%20矩阵论) |
-| 信息论           | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/特%20信息论) |
+| 矩阵论（研）     | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/研——矩阵论) |
+| 信息论           | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/特——信息论) |
 
 ### 物理基础课程
 | 课程名称       | 链接                                                         |
@@ -46,7 +46,7 @@
 | 数据结构           | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IB%20数据结构) |
 | 数字逻辑           | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIA%20数字逻辑) |
 | 算法设计与分析     | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIA%20算法设计与分析) |
-| 数据库设计原理     | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIB%20数据库设计原理) |
+| 数据库设计原理     | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIB%20数据库系统原理) |
 | 自然语言处理       | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIB%20自然语言处理) |
 | 自然语言处理（必修） | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIIB%20自然语言处理（必修）) |
 | 计算机系统基础     | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIB%20计算机系统基础) |
@@ -72,7 +72,7 @@
 | :--------------- | :----------------------------------------------------------- |
 | 程序设计课设     | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIA%20程序设计课设) |
 | 硬件综合课设     | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIIA%20硬件综合课设) |
-| 逻辑与计算机设计 | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIA%20逻辑与计算机设计) |
+| 逻辑与计算机设计 | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIA%20（部分专业）%20逻辑与计算机设计) |
 
 ### 政治理论课程
 | 课程名称                             | 链接                                                         |
