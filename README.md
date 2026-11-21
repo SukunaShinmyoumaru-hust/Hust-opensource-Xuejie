@@ -2,7 +2,7 @@
 
 计算机科学与技术学院本科培养方案中 64 门课的课件、作业、实验代码、往年试卷与复习资料，另有转专业联考、启明入学考试、学科竞赛和企业课等 10 份非课程资料，合计 4345 个文件。资料由不同届的学生陆续提交，年份跨度从 2008 到 2026，引用前留意文件夹内的时间标注。
 
-仓库 <https://github.com/SukunaShinmarimayu/Sukuna-doc> ｜ Sukuna 博客 <https://www.sukunahust.moe> ｜ [yuhangchen1 的课程总览](https://yuhangchen1.github.io/HUST_OPEN_SOURCE/)
+仓库 <https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie> ｜ Sukuna 博客 <https://www.sukunahust.moe> ｜ [yuhangchen1 的课程总览](https://yuhangchen1.github.io/HUST_OPEN_SOURCE/)
 
 ## 文件夹命名
 
@@ -137,7 +137,7 @@
 仓库内有 26 个子模块，全部指向 `gitee.com/tqychy` 下的个人仓库，分布在数据结构、数字逻辑、算法、汇编、函数式编程、操作系统、计网、计算机视觉、编译原理、系统结构、机器学习和系统能力培养等课程的「21 级作业/实验」目录里。直接 `git clone` 会得到这些目录的空壳，要拿到内容需加参数：
 
 ```bash
-git clone --recurse-submodules https://github.com/SukunaShinmarimayu/Sukuna-doc.git
+git clone --recurse-submodules https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie.git
 ```
 
 已经克隆过的话，在仓库内执行 `git submodule update --init --recursive`。子模块托管在 Gitee，国内访问通常比 GitHub 稳定。
@@ -163,5 +163,5 @@ git clone --recurse-submodules https://github.com/SukunaShinmarimayu/Sukuna-doc.
 ## Contributors
 
 <!-- readme: contributors -start -->
-![Contributors](https://contrib.rocks/image?repo=SukunaShinmarimayu/Sukuna-doc)
+![Contributors](https://contrib.rocks/image?repo=SukunaShinmyoumaru-hust/Hust-opensource-Xuejie)
 <!-- readme: contributors -end -->
