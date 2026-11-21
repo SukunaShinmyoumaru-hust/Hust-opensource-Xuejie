@@ -1,115 +1,167 @@
 # 华中科技大学计算机学院学习资料合集
 
-## 详细的overall
+计算机科学与技术学院本科培养方案中 64 门课的课件、作业、实验代码、往年试卷与复习资料，另有转专业联考、启明入学考试、学科竞赛和企业课等 10 份非课程资料，合计 4345 个文件。资料由不同届的学生陆续提交，年份跨度从 2008 到 2026，引用前留意文件夹内的时间标注。
 
-[Link](https://yuhangchen1.github.io/HUST_OPEN_SOURCE/)
+仓库 <https://github.com/SukunaShinmarimayu/Sukuna-doc> ｜ Sukuna 博客 <https://www.sukunahust.moe> ｜ [yuhangchen1 的课程总览](https://yuhangchen1.github.io/HUST_OPEN_SOURCE/)
 
-## 课程资料目录
+## 文件夹命名
 
-### 数学基础课程
-| 课程名称         | 链接                                                         |
-| :--------------- | :----------------------------------------------------------- |
-| 微积分（一）     | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IA%20微积分（一）) |
-| 微积分（二）     | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IB%20微积分（二）) |
-| 线性代数         | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IA%20线性代数) |
-| 概率论与数理统计 | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IB%20概率论与数理统计) |
-| 离散数学(一)     | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IB%20离散数学(一)) |
-| 离散数学（二）   | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIA%20离散数学（二）) |
-| 数值分析         | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIIA%20数值分析) |
-| 计卓-一元分析    | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IA%20计卓-一元分析) |
-| 矩阵论（研）     | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/研——矩阵论) |
-| 信息论           | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/特——信息论) |
+顶层文件夹名以罗马数字的「学年 + 学期」开头，其后直接接课程名，`IA` 是大一上学期，`IIIB` 是大三下学期。`特——` 开头的不在培养方案内，`研——` 开头的是研究生课程。
 
-### 物理基础课程
-| 课程名称       | 链接                                                         |
-| :------------- | :----------------------------------------------------------- |
-| 大学物理（一） | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IB%20大学物理（一）) |
-| 大学物理（二） | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIA%20大学物理（二）) |
-| 大学物理实验   | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IB%20大学物理实验) |
-| 电路理论       | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIA%20电路理论) |
-| 信号与线性系统 | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIB%20信号与线性系统) |
+| 前缀 | 学期 | 课程数 |
+| :--- | :--- | :--- |
+| IA / IB | 大一上 / 大一下 | 8 / 8 |
+| IIA / IIB | 大二上 / 大二下 | 13 / 14 |
+| IIIA / IIIB | 大三上 / 大三下 | 9 / 9 |
+| IVA | 大四上 | 3 |
 
-### 编程语言课程
-| 课程名称         | 链接                                                         |
-| :--------------- | :----------------------------------------------------------- |
-| C语言程序设计    | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IA%20C语言程序设计) |
-| C++程序设计      | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIA%20C++程序设计) |
-| Java程序设计     | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIB%20Java程序设计) |
-| Verilog程序设计  | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIB%20Verilog程序设计) |
-| 汇编语言程序设计 | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIB%20汇编语言程序设计) |
-| 函数式编程       | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIIA%20函数式编程) |
+## 课程资料
 
-### 计算机核心课程
-| 课程名称           | 链接                                                         |
-| :----------------- | :----------------------------------------------------------- |
-| 计算思维           | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IA%20计算思维) |
-| 数据结构           | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IB%20数据结构) |
-| 数字逻辑           | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIA%20数字逻辑) |
-| 算法设计与分析     | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIA%20算法设计与分析) |
-| 数据库设计原理     | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIB%20数据库系统原理) |
-| 自然语言处理       | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIB%20自然语言处理) |
-| 自然语言处理（必修） | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIIB%20自然语言处理（必修）) |
-| 计算机系统基础     | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIB%20计算机系统基础) |
-| 计算机组成原理     | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIB%20计算机组成原理) |
-| 大数据分析         | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIIA%20大数据分析) |
-| 大数据处理         | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIIA%20大数据处理) |
-| 嵌入式系统         | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIIA%20嵌入式系统) |
-| 操作系统设计原理   | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIIA%20操作系统设计原理) |
-| 计算机网络与通信   | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIIA%20计算机网络与通信) |
-| 计算机视觉         | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIIA%20计算机视觉) |
-| 大数据算法综合实践 | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIIB%20大数据算法综合实践) |
-| 并行计算           | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIIB%20并行计算) |
-| 数据可视化技术     | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIIB%20数据可视化技术) |
-| 编译原理           | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIIB%20编译原理) |
-| 强化学习           | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIIB%20强化学习) |
-| 计算机系统结构     | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIIB%20计算机系统结构) |
-| 大数据系统综合实践 | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IVA%20大数据系统综合实践) |
-| 数字图像处理       | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIIB%20数字图像处理) |
-| 社会网络与计算     | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IVA%20社会网络与计算) |
+### 大一上 · IA
 
-### 实践课程
-| 课程名称         | 链接                                                         |
-| :--------------- | :----------------------------------------------------------- |
-| 程序设计课设     | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIA%20程序设计课设) |
-| 硬件综合课设     | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIIA%20硬件综合课设) |
-| 逻辑与计算机设计 | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIA%20（部分专业）%20逻辑与计算机设计) |
+| 课程 | 类别 | 说明 |
+| :--- | :--- | :--- |
+| [微积分（一）](./IA%20微积分（一）/) | 数学 |  |
+| [线性代数](./IA%20线性代数/) | 数学 |  |
+| [计卓·一元分析](./IA%20计卓-一元分析/) | 数学 | 计算机卓越班单独开设 |
+| [C 语言程序设计](./IA%20C语言程序设计/) | 编程语言 |  |
+| [计算思维](./IA%20计算思维/) | 计算机核心 |  |
+| [思想道德与法律基础](./IA%20思想道德与法律基础/) | 思政与军事 |  |
+| [中国语文](./IA%20中国语文/) | 语言文化 |  |
+| [综合英语（一）](./IA%20综合英语%28一%29/) | 语言文化 |  |
 
-### 政治理论课程
-| 课程名称                             | 链接                                                         |
-| :----------------------------------- | :----------------------------------------------------------- |
-| 思想道德与法律基础                   | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IA%20思想道德与法律基础) |
-| 中国近现代史纲要                     | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IB%20中国近现代史纲要) |
-| 军事理论                             | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IB%20军事理论) |
-| 习思想                               | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIA%20习思想) |
-| 马克思主义原理                       | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIA%20马克思主义原理) |
-| 毛泽东思想与中国特色社会主义思想概要 | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIB%20毛泽东思想与中国特色社会主义思想概要) |
+### 大一下 · IB
 
-### 语言文化课程
-| 课程名称     | 链接                                                         |
-| :----------- | :----------------------------------------------------------- |
-| 中国语文     | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IA%20中国语文) |
-| 综合英语(一) | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IA%20综合英语(一)) |
+| 课程 | 类别 | 说明 |
+| :--- | :--- | :--- |
+| [微积分（二）](./IB%20微积分（二）/) | 数学 |  |
+| [概率论与数理统计](./IB%20概率论与数理统计/) | 数学 |  |
+| [离散数学（一）](./IB%20离散数学%28一%29/) | 数学 |  |
+| [大学物理实验](./IB%20大学物理实验/) | 物理与电路 |  |
+| [大学物理（一）](./IB%20大学物理（一）/) | 物理与电路 |  |
+| [数据结构](./IB%20数据结构/) | 计算机核心 | 含 21 级实验与课设 |
+| [中国近现代史纲要](./IB%20中国近现代史纲要/) | 思政与军事 |  |
+| [军事理论](./IB%20军事理论/) | 思政与军事 |  |
 
-### 特色项目与其他
-| 课程名称             | 链接                                                         |
-| :------------------- | :----------------------------------------------------------- |
-| 美赛F奖              | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/特——MCM_ICM2022_C_Finalist) |
-| 华为昇腾企业课       | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/特——华为昇腾企业课) |
-| 启明入学考试         | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/特——启明入学考试) |
-| 计算机学院参考文件   | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/特——计算机学院参考文件) |
-| 转专业联考           | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/特——转专业联考) |
-| 信息安全数学基础     | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/特——（网安学院）信息安全数学基础) |
-| 模拟电子技术(已取消) | [link](https://github.com/SukunaShinmyoumaru-hust/Hust-opensource-Xuejie/tree/main/IIB%20计算机已取消──模拟电子技术) |
+### 大二上 · IIA
+
+| 课程 | 类别 | 说明 |
+| :--- | :--- | :--- |
+| [离散数学（二）](./IIA%20离散数学（二）/) | 数学 |  |
+| [信号与线性系统](./IIA%20信号与线性系统/) | 物理与电路 | 课件、作业与模拟试题 |
+| [大学物理（二）](./IIA%20大学物理（二）/) | 物理与电路 |  |
+| [电路理论](./IIA%20电路理论/) | 物理与电路 |  |
+| [C++ 程序设计](./IIA%20C%2B%2B程序设计/) | 编程语言 |  |
+| [Python 大数据与人工智能实践](./IIA%20Python%20大数据与人工智能实践/) | 编程语言 | 大作业与头歌作业 |
+| [数字逻辑](./IIA%20数字逻辑/) | 计算机核心 | 含 21 级实验 |
+| [算法设计与分析](./IIA%20算法设计与分析/) | 计算机核心 | 含 21 级作业 |
+| [大数据导论](./IIA%20大数据导论/) | 专业方向 | 大作业 |
+| [程序设计课程设计](./IIA%20程序设计课设/) | 课程设计 | 含高级语言源程序格式处理工具 |
+| [逻辑与计算机设计](./IIA%20（部分专业）%20逻辑与计算机设计/) | 课程设计 | 部分专业开设 |
+| [习近平新时代中国特色社会主义思想概论](./IIA%20习思想/) | 思政与军事 |  |
+| [马克思主义基本原理](./IIA%20马克思主义原理/) | 思政与军事 |  |
+
+### 大二下 · IIB
+
+| 课程 | 类别 | 说明 |
+| :--- | :--- | :--- |
+| [信号与线性系统](./IIB%20信号与线性系统/) | 物理与电路 | 公式整理、总复习与期末真题 |
+| [模拟电子技术](./IIB%20计算机已取消——模拟电子技术/) | 物理与电路 | 计算机专业已取消 |
+| [Java 程序设计](./IIB%20Java程序设计/) | 编程语言 |  |
+| [Verilog 程序设计](./IIB%20Verilog程序设计/) | 编程语言 |  |
+| [汇编语言程序设计](./IIB%20汇编语言程序设计/) | 编程语言 | 含 21 级作业与实验 |
+| [数据库系统原理](./IIB%20数据库系统原理/) | 计算机核心 | 原「数据库设计原理」的资料已并入此处 |
+| [计算机系统基础](./IIB%20计算机系统基础/) | 计算机核心 | 含 2024 春 CSAPP 实验、22 级整套课件与教材电子书 |
+| [计算机组成原理](./IIB%20计算机组成原理/) | 计算机核心 |  |
+| [软件工程](./IIB%20软件工程/) | 计算机核心 | 含 2024 头歌答案 |
+| [机器学习](./IIB%20机器学习/) | 专业方向 | 21 级作业、大作业报告与 2025 考察题目 |
+| [机器学习·必修课内容](./IIB%20机器学习（必修课内容）/) | 专业方向 | PPT、作业与 2026 春回忆版 |
+| [自然语言处理](./IIB%20自然语言处理/) | 专业方向 | 实验任务书、报告格式与往届课程报告 |
+| [计算机图形学](./IIB%20计算机图形学/) | 专业方向 |  |
+| [毛泽东思想与中国特色社会主义思想概要](./IIB%20毛泽东思想与中国特色社会主义思想概要/) | 思政与军事 | 含 B 卷答案 |
+
+### 大三上 · IIIA
+
+| 课程 | 类别 | 说明 |
+| :--- | :--- | :--- |
+| [数值分析](./IIIA%20数值分析/) | 数学 |  |
+| [函数式编程](./IIIA%20函数式编程/) | 编程语言 | 含 21 级随堂作业与实验 |
+| [操作系统设计原理](./IIIA%20操作系统设计原理/) | 计算机核心 | 含 21 级作业与课设、2025/2026 试卷 |
+| [计算机网络与通信](./IIIA%20计算机网络与通信/) | 计算机核心 | 含作业、21 级实验与 2022 级试题 |
+| [大数据分析](./IIIA%20大数据分析/) | 专业方向 |  |
+| [大数据处理](./IIIA%20大数据处理/) | 专业方向 |  |
+| [嵌入式系统](./IIIA%20嵌入式系统/) | 专业方向 | asterich 与 macOS 实验环境搭建 |
+| [计算机视觉](./IIIA%20计算机视觉/) | 专业方向 | 含 21 级实验与结课报告 |
+| [硬件综合课程设计](./IIIA%20硬件综合课设/) | 课程设计 | 组原课设与小组任务 |
+
+### 大三下 · IIIB
+
+| 课程 | 类别 | 说明 |
+| :--- | :--- | :--- |
+| [编译原理](./IIIB%20编译原理/) | 计算机核心 | 含 21 级作业与实验 |
+| [计算机系统结构](./IIIB%20计算机系统结构/) | 计算机核心 | 含 21 级作业与实验 |
+| [嵌入式系统](./IIIB%20嵌入式系统/) | 专业方向 | embedded-system 项目 |
+| [并行计算](./IIIB%20并行计算/) | 专业方向 |  |
+| [强化学习](./IIIB%20强化学习/) | 专业方向 | exp1—exp3、任务书与 LaTeX 报告模板 |
+| [数字图像处理](./IIIB%20数字图像处理/) | 专业方向 | 课件、实验内容与试题 |
+| [数据可视化技术](./IIIB%20数据可视化技术/) | 专业方向 |  |
+| [自然语言处理·必修](./IIIB%20自然语言处理（必修）/) | 专业方向 | 中文分词、命名实体识别、从零构建 LLM 与昇腾基座实验 |
+| [大数据算法综合实践](./IIIB%20大数据算法综合实践/) | 课程设计 |  |
+
+### 大四上 · IVA
+
+| 课程 | 类别 | 说明 |
+| :--- | :--- | :--- |
+| [社会网络与计算](./IVA%20社会网络与计算/) | 专业方向 | 课件 |
+| [大数据系统综合实践](./IVA%20大数据系统综合实践/) | 课程设计 | 任务书、python-louvain 与往届实验报告 |
+| [系统能力培养](./IVA%20系统能力培养/) | 课程设计 | DBMS 项目 |
+
+## 非课程资料
+
+| 资料 | 内容 |
+| :--- | :--- |
+| [转专业联考](./特——转专业联考/) | 2011—2024 年数学与英语真题、官方解析、报录比、各专业考核形式、申请表与经验谈 |
+| [启明入学考试](./特——启明入学考试/) | 2014—2024 年理科实验班选拔试题、综合卷、英语卷与面试资料 |
+| [竞赛指南](./特——竞赛指南/) | 双创中心竞赛讲座 PPT |
+| [计算机学院参考文件](./特——计算机学院参考文件/) | 专业分流方案、本科实验班科研指导信息、LaTeX 模板 |
+| [MCM/ICM 2022 C 题 Finalist](./特——MCM_ICM2022_C_Finalist（美赛F奖代码论文）/) | 美赛 F 奖的完整代码与论文 |
+| [华为《昇腾目标检测实战》企业课](./特——华为昇腾企业课/) | 基于 MindSpore 的实验记录 |
+| [华为鲲鹏即时交流平台开发及调优](./特——华为基于鲲鹏的即时交流平台开发及调优/) | 四个关卡的实验手册，覆盖 MySQL/Nginx/Hadoop/Hive 部署、源码迁移、平台实现与 Hive 数据处理 |
+| [信息安全数学基础·网安专业](./特——（网安专业）信息安全数学基础/) | 含 2024 年网安算法试卷 |
+| [信息论](./特——信息论/) |  |
+| [矩阵论·研究生](./研——矩阵论/) | 2020 年试题 |
+| [macOS 环境配置指南](./Macos%2BSetup%C2%A0Guide.pdf) | PDF，macOS 上的开发环境搭建 |
+
+## 克隆与子模块
+
+仓库内有 26 个子模块，全部指向 `gitee.com/tqychy` 下的个人仓库，分布在数据结构、数字逻辑、算法、汇编、函数式编程、操作系统、计网、计算机视觉、编译原理、系统结构、机器学习和系统能力培养等课程的「21 级作业/实验」目录里。直接 `git clone` 会得到这些目录的空壳，要拿到内容需加参数：
+
+```bash
+git clone --recurse-submodules https://github.com/SukunaShinmarimayu/Sukuna-doc.git
+```
+
+已经克隆过的话，在仓库内执行 `git submodule update --init --recursive`。子模块托管在 Gitee，国内访问通常比 GitHub 稳定。
+
+## 使用提示
+
+同一门课可能有两个文件夹，资料互补而非重复。信号与线性系统、嵌入式系统、机器学习、自然语言处理都各有两份，具体差异见各表的说明列。
+
+模拟电子技术已从计算机专业培养方案中移除，文件夹名保留了「已取消」标记，内容仍可参考。原「数据库设计原理」的资料已并入 `IIB 数据库系统原理`。
+
+不少实验报告和课设里直接写着作者的姓名与学号，转载或二次分发前请先脱敏。
+
+仓库体积较大，完整克隆耗时长。磁盘或带宽紧张时用 `git clone --depth 1`，或在 GitHub 网页上按需下载单个文件夹。
+
+## 参与贡献
+
+发现错误、笔误或资料过期，开 Issue 说明课程名和具体位置即可。想补充某门课的公开资料，直接发 Pull Request。新增课程请按「学期前缀 + 空格 + 课程名」建文件夹，并把它补进上面对应学期的表格里。
+
+## 许可
+
+仓库以 [MIT License](./LICENSE) 发布，但它只覆盖贡献者自己写的部分，也就是实验代码、笔记、公式整理和复习资料。老师上传的课件、学校印发的往年试卷、以及署名他人的实验报告和课设，版权均属原作者，不在 MIT 的授权范围内。要转载这类文件，请自行向版权方确认。
 
 ## Contributors
 
-![Contributors](https://contrib.rocks/image?repo=SukunaShinmyoumaru-hust/Hust-opensource-Xuejie)
-
-## 非常欢迎：
-
-1.  **纠错与建议:** 如果你发现任何错误、笔误，或者有更好的理解和学习资源，请大胆地提出 `Issue`。
-2.  **交流讨论:** 针对特定课程或知识点，欢迎在相关的 `Issue` 区进行开放和友好的讨论。
-3.  **内容补充 (Pull Requests):** 如果你有该课程相关的、并且认为有价值补充的公开资料，可以考虑发起 `Pull Request`。
-
-
-Sukuna 博客:www.sukunahust.moe
+<!-- readme: contributors -start -->
+![Contributors](https://contrib.rocks/image?repo=SukunaShinmarimayu/Sukuna-doc)
+<!-- readme: contributors -end -->
